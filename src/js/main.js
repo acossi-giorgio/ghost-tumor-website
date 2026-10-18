@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
  */
 async function loadTranslations() {
   try {
-    const response = await fetch("./src/i18n/translations.json");
+    const response = await fetch("./translations.json");
     if (!response.ok) {
       throw new Error(`Failed to load translations: ${response.status}`);
     }
