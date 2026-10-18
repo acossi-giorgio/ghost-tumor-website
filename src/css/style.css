@@ -750,7 +750,9 @@ h1, h2, h3, h4 {
 .ingredient-thumb {
   width: 100%;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
+  object-fit: contain;
+  padding: var(--s-3);
+  background: var(--bg-tint);
   border-bottom: 1px solid var(--line);
 }
 
@@ -904,6 +906,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--s-2);
 }
 
 .step-img {
