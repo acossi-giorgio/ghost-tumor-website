@@ -1,4 +1,14 @@
 {
+  "meta": {
+    "pageTitle": {
+      "it": "GHOST TUMOR - Piattaforma 3D Microambiente Tumorale Colorettale",
+      "en": "GHOST TUMOR - 3D Colorectal Tumor Microenvironment Platform"
+    },
+    "pageDescription": {
+      "it": "Una nuova piattaforma 3D biomimetica per studiare il microambiente del carcinoma colorettale mediante decellularizzazione, GelMA e 3D bioprinting.",
+      "en": "A 3D biomimetic platform to dissect the colorectal tumor microenvironment using patient-derived decellularized extracellular matrix (dECM), GelMA hydrogel, and 3D bioprinting."
+    }
+  },
   "navigation": {
     "navConcept": {
       "it": "Cos'è",
@@ -29,6 +39,10 @@
     "heroBadge": {
       "it": "Maker Faire Rome 2026 : Stand Universitario",
       "en": "Maker Faire Rome 2026 : Research Stand"
+    },
+    "heroEventLabel": {
+      "it": "Ingegneria Biomedica & Oncologia",
+      "en": "Biomedical Engineering & Oncology"
     },
     "heroTitle": {
       "it": "GHOST TUMOR",
@@ -76,6 +90,10 @@
       "it": "Ogni tumore è immerso in un'impalcatura di proteine - la Matrice Extracellulare (ECM) - che governa la sua crescita, l'invasione e la resistenza alle cure. Le cellule tumorali rimodellano questa matrice rendendola più densa e rigida, creando una fortezza che esclude le difese immunitarie.",
       "en": "Every solid tumor is embedded in a dense protein scaffold - the Extracellular Matrix (ECM) - which governs cell proliferation, tissue invasion, and therapeutic resistance. Colorectal cancer cells remodel this scaffold, creating a dense physical and biochemical barrier that excludes immune cell infiltration."
     },
+    "conceptCode1": {
+      "it": "CONCETTO 01",
+      "en": "CONCEPT 01"
+    },
     "conceptCard1Title": {
       "it": "L'Organo 'Fantasma' (dECM)",
       "en": "The 'Ghost' Scaffold (dECM)"
@@ -83,6 +101,10 @@
     "conceptCard1Desc": {
       "it": "Attraverso trattamenti chimico-enzimatici, tutte le cellule del tessuto tumorale di paziente vengono rimosse. Resta una matrice traslucida, un vero e proprio scaffold fantasma che conserva la memoria e la biochimica originaria.",
       "en": "Through gentle chemical and enzymatic detergent wash cycles, every cell is cleared from patient colorectal resections. The result is a translucent, cell-free biological scaffold retaining native architecture, collagen composition, and microenvironmental cues."
+    },
+    "conceptCode2": {
+      "it": "CONCETTO 02",
+      "en": "CONCEPT 02"
     },
     "conceptCard2Title": {
       "it": "Ricellularizzazione 3D",
@@ -134,6 +156,10 @@
       "it": "Ghost Tumor (dECM)",
       "en": "Ghost Tumor (dECM)"
     },
+    "decellNoteBadge": {
+      "it": "NOTA",
+      "en": "NOTE"
+    },
     "decellNote": {
       "it": "Nota sperimentale: nel canale DAPI (blu), il tessuto tumorale dopo la decellularizzazione non mostra più alcun nucleo cellulare, a conferma della rimozione completa delle cellule lasciando la sola impalcatura extracellulare.",
       "en": "Experimental Note: In the DAPI channel (blue fluorescent filter), tumor tissue after decellularization demonstrates total absence of cell nuclei, verifying complete clearance of cellular material while maintaining the native collagen framework intact."
@@ -151,6 +177,26 @@
     "ingDesc": {
       "it": "Per superare i limiti delle colture su plastica bidimensionale e i limiti dell'alginato nel supportare le cellule stromali, il modello combina 4 elementi biologici sinergici:",
       "en": "To overcome the limitations of 2D plastic plates and alginate's failure to support stromal cells long-term, the platform integrates four synergistic biological components:"
+    },
+    "metaTumor": {
+      "it": "Tumorale",
+      "en": "Tumor"
+    },
+    "metaStroma": {
+      "it": "Stroma",
+      "en": "Stroma"
+    },
+    "metaPatient": {
+      "it": "Paziente",
+      "en": "Patient"
+    },
+    "metaImmunity": {
+      "it": "Immunità",
+      "en": "Immunity"
+    },
+    "metaDynamic": {
+      "it": "Dinamico",
+      "en": "Dynamic"
     },
     "lovoTitle": {
       "it": "Cellule LoVo (Tumorali)",
@@ -206,6 +252,10 @@
       "it": "La pipeline di laboratorio riprodotta nel poster illustrativo dello stand, per ottenere costrutti riproducibili e standardizzati:",
       "en": "The standardized protocol illustrated on our exhibition poster, ensuring reproducible and uniform 3D cancer replicates for drug screening:"
     },
+    "step1Code": {
+      "it": "LIOFIL",
+      "en": "LYOPHIL"
+    },
     "step1Title": {
       "it": "1. Liofilizzazione (Lyophilization)",
       "en": "1. Lyophilization"
@@ -213,6 +263,10 @@
     "step1Desc": {
       "it": "Prepariamo il GelMA e la dECM tramite liofilizzatore (Heto LyoPro 3000) per ottenere una matrice porosa disidratata e stabile pronta all'uso.",
       "en": "GelMA and patient dECM are dehydrated using a vacuum freeze-dryer (Heto LyoPro 3000) to yield stable, porous matrix sponges ready for reconstitution."
+    },
+    "step2Code": {
+      "it": "BIOINK",
+      "en": "BIOINK"
     },
     "step2Title": {
       "it": "2. Preparazione Bioink",
@@ -222,6 +276,10 @@
       "it": "Sciogliamo il GelMA liofilizzato in soluzione salina con fotoiniziatori (Riboflavina + SPS) per ottenere l'idrogel liquido biocompatibile.",
       "en": "Lyophilized GelMA is dissolved in sterile saline alongside biocompatible photoinitiators (Riboflavin + Sodium Persulfate) to create the liquid bioink."
     },
+    "step3Code": {
+      "it": "HARVEST",
+      "en": "HARVEST"
+    },
     "step3Title": {
       "it": "3. Harvesting & Centrifugazione",
       "en": "3. Cell Detachment & Centrifugation"
@@ -229,6 +287,10 @@
     "step3Desc": {
       "it": "Distacchiamo le cellule LoVo e CAF dalle piastre di coltura e le centrifughiamo per raccogliere e concentrare il pellet cellulare.",
       "en": "LoVo adenocarcinoma cells and CAFs are harvested from culture flasks under laminar flow hoods and concentrated into distinct cell pellets."
+    },
+    "step4Code": {
+      "it": "CONTA",
+      "en": "COUNT"
     },
     "step4Title": {
       "it": "4. Conta Cellulare (Cell Counting)",
@@ -238,6 +300,10 @@
       "it": "Contiamo le cellule al microscopio con camera di Bürker per definire con precisione la densità cellulare ottimale da inserire nel costrutto.",
       "en": "Viable cell concentration is determined using a Bürker hemocytometer under phase-contrast microscopy to calculate exact cell encapsulation ratios."
     },
+    "step5Code": {
+      "it": "STAMPO",
+      "en": "MOLD"
+    },
     "step5Title": {
       "it": "5. Bioink + Cellule & Semina",
       "en": "5. Cell Loading & Mold Casting"
@@ -245,6 +311,10 @@
     "step5Desc": {
       "it": "Risospendiamo le cellule nel GelMA e inseriamo la mix nello stampo in silicone (mold) o procediamo alla biostampa con CELLINK BIO X.",
       "en": "Cell pellets are gently resuspended in the GelMA bioink and dispensed into customized silicone molds or extruded via a CELLINK BIO X pneumatic bioprinter."
+    },
+    "step6Code": {
+      "it": "CROSSLINK",
+      "en": "CROSSLINK"
     },
     "step6Title": {
       "it": "6. Fotopolimerizzazione",
@@ -254,6 +324,10 @@
       "it": "Illuminiamo l'idrogel con una specifica sorgente di luce visibile/UV: i legami polimerici reticolano e solidificano il gel in pochi minuti.",
       "en": "Constructs are exposed to controlled visible light / UV-A: free-radical crosslinking rapidly cures the hydrogel network into elastic mini-discs."
     },
+    "step7Code": {
+      "it": "TRANSFER",
+      "en": "TRANSFER"
+    },
     "step7Title": {
       "it": "7. Well Transfer",
       "en": "7. Well Transfer"
@@ -261,6 +335,10 @@
     "step7Desc": {
       "it": "Preleviamo delicatamente con una spatola i piccoli gel solidificati dallo stampo e li posizioniamo uno a uno nella piastra multiwell con terreno di coltura.",
       "en": "Solidified hydrogel constructs are delicately lifted using sterile micro-spatulas and transferred into individual wells of 24-well culture plates."
+    },
+    "step8Code": {
+      "it": "INCUBA",
+      "en": "INCUBATE"
     },
     "step8Title": {
       "it": "8. Incubazione a Lungo Termine",
@@ -300,6 +378,10 @@
       "it": "Co-coltura + dECM",
       "en": "Co-Culture + dECM"
     },
+    "microLoVoBadge": {
+      "it": "Live/Dead • Calceina-AM / EthD-1 • Barra scala: 500 µm",
+      "en": "Live/Dead • Calcein-AM / EthD-1 • Scale bar: 500 µm"
+    },
     "microLoVoTitle": {
       "it": "Formazione di Cluster 3D nelle Cellule LoVo",
       "en": "3D Cluster Morphogenesis in LoVo Cells"
@@ -307,6 +389,10 @@
     "microLoVoDesc": {
       "it": "Al saggio di vitalità Live/Dead (Calceina-AM verde per cellule vive, EthD-1 rosso per cellule morte), le cellule tumorali colorettali LoVo mostrano elevatissima vitalità e si organizzano progressivamente in caratteristici sferoidi e cluster densi.",
       "en": "Live/Dead fluorescence staining (Calcein-AM green = viable cells, EthD-1 red = dead nuclei) confirms superior cell survival and self-assembly into spherical colorectal cancer clusters inside the GelMA hydrogel."
+    },
+    "microCafBadge": {
+      "it": "Live/Dead • CAF in GelMA • Barra scala: 500 µm",
+      "en": "Live/Dead • CAF in GelMA • Scale bar: 500 µm"
     },
     "microCafTitle": {
       "it": "Mantenimento dei CAF Fibroblasti in GelMA",
@@ -316,6 +402,10 @@
       "it": "A differenza dell'alginato, la GelMA garantisce un substrato ottimale per i Cancer-Associated Fibroblasts, che mantengono la loro tipica morfologia allungata e fusiforme con marcata attività metabolica.",
       "en": "Unlike inert polysaccharide hydrogels, GelMA promotes extensive fibroblast elongation, spindle morphology, and sustained metabolic activity through active integrin anchorage."
     },
+    "microTimelineBadge": {
+      "it": "T0 → T7 → T14 → T30 • Live/Dead & H&E",
+      "en": "T0 → T7 → T14 → T30 • Live/Dead & H&E"
+    },
     "microTimeTitle": {
       "it": "Evoluzione da T0 a T30 & Sezioni Crioprotette",
       "en": "Long-Term Kinetics (T0 to T30) & Cryosections"
@@ -323,6 +413,10 @@
     "microTimeDesc": {
       "it": "Monitoraggio della vitalità e analisi istologica con Ematossilina-Eosina dopo messa a punto del protocollo di crioprotezione con saccarosio sequenziale (15% e 30%) e inclusione in OCT, evidenziando cluster cellulari ben strutturati a 14 e 30 giorni.",
       "en": "Viability monitoring and brightfield H&E cross-sections after optimized sequential sucrose cryoprotection (15% and 30%) and OCT embedding, confirming intact cellular nests at day 30."
+    },
+    "microCocultureBadge": {
+      "it": "LoVo (1:1) CAF ± dECM (5 mg/mL)",
+      "en": "LoVo (1:1) CAF ± dECM (5 mg/mL)"
     },
     "microCocultureTitle": {
       "it": "Co-colture LoVo + CAF con Matrice Tumorale dECM",
@@ -339,10 +433,6 @@
     "legendDead": {
       "it": "Rosso: cellule non vitali (EthD-1)",
       "en": "Red: dead nuclei (EthD-1)"
-    },
-    "legendNuclei": {
-      "it": "Blu: nuclei cellulari (Hoechst / DAPI)",
-      "en": "Blue: cell nuclei (Hoechst / DAPI)"
     },
     "legendHe": {
       "it": "Viola/Rosa: istologia Ematossilina-Eosina",
@@ -429,6 +519,10 @@
     "footerCopy": {
       "it": "Progetto 'GHOST TUMOR' - Università di Genova & IRCCS Policlinico San Martino",
       "en": "GHOST TUMOR Project - University of Genoa & IRCCS Policlinico San Martino"
+    },
+    "footerEvent": {
+      "it": "Maker Faire Rome 2026",
+      "en": "Maker Faire Rome 2026"
     }
   }
 }

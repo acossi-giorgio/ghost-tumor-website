@@ -65,7 +65,7 @@
       
       <div class="hero-meta-strip">
         <span class="hero-tag" data-i18n="heroBadge">{{ heroBadge }}</span>
-        <span class="hero-event-label">Biomedical Engineering & Oncology</span>
+        <span class="hero-event-label" data-i18n="heroEventLabel">{{ heroEventLabel }}</span>
       </div>
 
       <div class="hero-grid">
@@ -111,13 +111,13 @@
 
       <div class="concept-grid">
         <div class="concept-card highlight">
-          <div class="concept-card-code">CONCEPT 01</div>
+          <div class="concept-card-code" data-i18n="conceptCode1">{{ conceptCode1 }}</div>
           <h3 data-i18n="conceptCard1Title">{{ conceptCard1Title }}</h3>
           <p data-i18n="conceptCard1Desc">{{ conceptCard1Desc }}</p>
         </div>
 
         <div class="concept-card">
-          <div class="concept-card-code">CONCEPT 02</div>
+          <div class="concept-card-code" data-i18n="conceptCode2">{{ conceptCode2 }}</div>
           <h3 data-i18n="conceptCard2Title">{{ conceptCard2Title }}</h3>
           <p data-i18n="conceptCard2Desc">{{ conceptCard2Desc }}</p>
         </div>
@@ -173,7 +173,7 @@
         </div>
 
         <div class="decell-explain-box">
-          <span class="decell-explain-badge">NOTE</span>
+          <span class="decell-explain-badge" data-i18n="decellNoteBadge">{{ decellNoteBadge }}</span>
           <span data-i18n="decellNote">{{ decellNote }}</span>
         </div>
       </div>
@@ -200,7 +200,7 @@
           <div class="ingredient-content">
             <div class="ingredient-meta">
               <span class="marker-tag epcam">EpCAM+</span>
-              <span class="ingredient-type">Tumor</span>
+              <span class="ingredient-type" data-i18n="metaTumor">{{ metaTumor }}</span>
             </div>
             <h3 data-i18n="lovoTitle">{{ lovoTitle }}</h3>
             <p data-i18n="lovoDesc">{{ lovoDesc }}</p>
@@ -213,7 +213,7 @@
           <div class="ingredient-content">
             <div class="ingredient-meta">
               <span class="marker-tag vim">Vimentin+</span>
-              <span class="ingredient-type">Stroma</span>
+              <span class="ingredient-type" data-i18n="metaStroma">{{ metaStroma }}</span>
             </div>
             <h3 data-i18n="cafTitle">{{ cafTitle }}</h3>
             <p data-i18n="cafDesc">{{ cafDesc }}</p>
@@ -225,7 +225,7 @@
           <img src="./assets/img/step1_lyophilization.webp" alt="Patient-derived lyophilized dECM" class="ingredient-thumb" loading="lazy">
           <div class="ingredient-content">
             <div class="ingredient-meta">
-              <span class="marker-tag">Patient</span>
+              <span class="marker-tag" data-i18n="metaPatient">{{ metaPatient }}</span>
               <span class="ingredient-type">5 mg/mL</span>
             </div>
             <h3 data-i18n="decmTitle">{{ decmTitle }}</h3>
@@ -238,8 +238,8 @@
           <img src="./assets/img/bioprinter_biox.webp" alt="3D Bioprinter and dynamic culture" class="ingredient-thumb" loading="lazy">
           <div class="ingredient-content">
             <div class="ingredient-meta">
-              <span class="marker-tag">Immunity</span>
-              <span class="ingredient-type">Dynamic</span>
+              <span class="marker-tag" data-i18n="metaImmunity">{{ metaImmunity }}</span>
+              <span class="ingredient-type" data-i18n="metaDynamic">{{ metaDynamic }}</span>
             </div>
             <h3 data-i18n="pbmcTitle">{{ pbmcTitle }}</h3>
             <p data-i18n="pbmcDesc">{{ pbmcDesc }}</p>
@@ -276,7 +276,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">01</span>
-            <span class="step-code">LYOPHIL</span>
+            <span class="step-code" data-i18n="step1Code">{{ step1Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step1_lyophilization.webp" alt="Freeze-drying GelMA and patient dECM" class="step-img" loading="lazy">
@@ -289,7 +289,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">02</span>
-            <span class="step-code">BIOINK</span>
+            <span class="step-code" data-i18n="step2Code">{{ step2Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step2_bioink.webp" alt="Bioink preparation with riboflavin photoinitiator" class="step-img" loading="lazy">
@@ -302,7 +302,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">03</span>
-            <span class="step-code">HARVEST</span>
+            <span class="step-code" data-i18n="step3Code">{{ step3Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step3_harvesting.webp" alt="Cell harvesting and centrifugation" class="step-img" loading="lazy">
@@ -315,7 +315,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">04</span>
-            <span class="step-code">COUNT</span>
+            <span class="step-code" data-i18n="step4Code">{{ step4Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step4_cell_counting.webp" alt="Cell counting under microscope with Burker chamber" class="step-img" loading="lazy">
@@ -328,7 +328,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">05</span>
-            <span class="step-code">MOLD</span>
+            <span class="step-code" data-i18n="step5Code">{{ step5Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step5_bioink_cells.webp" alt="Cell suspension in bioink and molding" class="step-img" loading="lazy">
@@ -341,7 +341,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">06</span>
-            <span class="step-code">CROSSLINK</span>
+            <span class="step-code" data-i18n="step6Code">{{ step6Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step6_photopolymerization.webp" alt="UV-A visible light photopolymerization" class="step-img" loading="lazy">
@@ -354,7 +354,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">07</span>
-            <span class="step-code">TRANSFER</span>
+            <span class="step-code" data-i18n="step7Code">{{ step7Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step7_well_transfer.webp" alt="Hydrogel transfer to multiwell culture plate" class="step-img" loading="lazy">
@@ -367,7 +367,7 @@
         <div class="step-card">
           <div class="step-header">
             <span class="step-num-badge">08</span>
-            <span class="step-code">INCUBATE</span>
+            <span class="step-code" data-i18n="step8Code">{{ step8Code }}</span>
           </div>
           <div class="step-img-box">
             <img src="./assets/img/step8_incubation.webp" alt="Eppendorf CellXpert incubator" class="step-img" loading="lazy">
@@ -405,7 +405,7 @@
         <div class="micro-panel-grid">
           <div class="micro-fixed-frame">
             <img src="./assets/img/confocal_lovo_gelma.webp" alt="Confocal microscopy LoVo clusters in GelMA" class="micro-fixed-img" loading="lazy">
-            <span class="micro-img-badge">Live/Dead • Calcein-AM / EthD-1 • Scale bar: 500 µm</span>
+            <span class="micro-img-badge" data-i18n="microLoVoBadge">{{ microLoVoBadge }}</span>
           </div>
           <div class="micro-info-box">
             <div class="micro-info-content">
@@ -431,7 +431,7 @@
         <div class="micro-panel-grid">
           <div class="micro-fixed-frame">
             <img src="./assets/img/confocal_caf_gelma.webp" alt="Confocal microscopy CAF fibroblasts in GelMA" class="micro-fixed-img" loading="lazy">
-            <span class="micro-img-badge">Live/Dead • CAF in GelMA • Scale bar: 500 µm</span>
+            <span class="micro-img-badge" data-i18n="microCafBadge">{{ microCafBadge }}</span>
           </div>
           <div class="micro-info-box">
             <div class="micro-info-content">
@@ -457,7 +457,7 @@
         <div class="micro-panel-grid">
           <div class="micro-fixed-frame">
             <img src="./assets/img/microscopy_timeline.webp" alt="T0-T30 kinetics Live Dead and Hematoxylin-Eosin" class="micro-fixed-img" loading="lazy">
-            <span class="micro-img-badge">T0 → T7 → T14 → T30 • Live/Dead & H&E</span>
+            <span class="micro-img-badge" data-i18n="microTimelineBadge">{{ microTimelineBadge }}</span>
           </div>
           <div class="micro-info-box">
             <div class="micro-info-content">
@@ -483,7 +483,7 @@
         <div class="micro-panel-grid">
           <div class="micro-fixed-frame">
             <img src="./assets/img/experimental_design.webp" alt="Co-culture LoVo and CAF with patient dECM" class="micro-fixed-img" loading="lazy">
-            <span class="micro-img-badge">LoVo (1:1) CAF ± dECM (5 mg/mL)</span>
+            <span class="micro-img-badge" data-i18n="microCocultureBadge">{{ microCocultureBadge }}</span>
           </div>
           <div class="micro-info-box">
             <div class="micro-info-content">
@@ -588,7 +588,7 @@
   <footer class="site-footer">
     <div class="container">
       <p data-i18n="footerCopy">{{ footerCopy }}</p>
-      <p class="footer-copy">Maker Faire Rome 2026</p>
+      <p class="footer-copy" data-i18n="footerEvent">{{ footerEvent }}</p>
     </div>
   </footer>
 

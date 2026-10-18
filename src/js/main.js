@@ -87,6 +87,17 @@ function applyLanguage(lang) {
     }
   });
 
+  // Aggiorna titolo pagina e meta description
+  const pageTitle = findTranslation(translationsData, "pageTitle", lang);
+  if (pageTitle) {
+    document.title = pageTitle;
+  }
+  const pageDesc = findTranslation(translationsData, "pageDescription", lang);
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (pageDesc && metaDesc) {
+    metaDesc.setAttribute("content", pageDesc);
+  }
+
   // Set document language attribute
   document.documentElement.setAttribute("lang", lang);
 }
