@@ -838,10 +838,12 @@ h1, h2, h3, h4 {
 
 .diagram-preview-thumb {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-white);
+  display: block;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
