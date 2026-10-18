@@ -1,0 +1,10 @@
+# Source material (PPTX, reports, raw images) - not published on GitHub Pages
+/resource/
+/resources/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

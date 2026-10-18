@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>GHOST TUMOR - 3D Colorectal Tumor Microenvironment Platform</title>
+  <meta name="description" content="A 3D biomimetic platform to dissect the colorectal tumor microenvironment using patient-derived decellularized extracellular matrix (dECM), GelMA hydrogel, and 3D bioprinting. Research project by University of Genoa and clinical partners.">
+  
+  <!-- Open Graph Meta Tags (for QR code mobile scans & social previews) -->
+  <meta property="og:title" content="GHOST TUMOR - 3D Colorectal Tumor Microenvironment">
+  <meta property="og:description" content="Advanced 3D biomimetic platform for animal-free cancer research and personalized drug testing. Maker Faire Rome 2026.">
+  <meta property="og:image" content="./assets/img/experimental_design.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Preload Essential Brand Assets -->
+  <link rel="preload" href="./assets/img/fantasmino.png" as="image">
+  <link rel="preload" href="./assets/img/logo_unige.webp" as="image">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER (Sticky Top Bar with Logos & Language Switch)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-logos">
+        <a href="#hero" title="Ghost Tumor Home">
+          <img src="./assets/img/logo_unige.webp" alt="University of Genoa Logo" class="header-logo" width="120" height="38">
+        </a>
+        <img src="./assets/img/logo_dimi.webp" alt="DIMI Department Logo" class="header-logo" width="38" height="38">
+        
+        <div class="maker-badge-mini" title="Maker Faire Rome 2026">
+          <img src="./assets/img/logo_makerfaire.webp" alt="Maker Faire Rome 2026" width="24" height="24">
+          <span class="maker-badge-text" data-i18n="makerDate">ROME OCT 23-25 2026</span>
+        </div>
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#concept" class="nav-link" data-i18n="navConcept">Concept</a>
+        <a href="#model" class="nav-link" data-i18n="navModel">Model</a>
+        <a href="#pipeline" class="nav-link" data-i18n="navSteps">8 Steps</a>
+        <a href="#microscope" class="nav-link" data-i18n="navMicro">Results</a>
+        <a href="#team" class="nav-link" data-i18n="navTeam">Team</a>
+      </nav>
+
+      <!-- Language Selector (Default: English) -->
+      <div class="header-controls">
+        <div class="lang-toggle" role="group" aria-label="Language Selector">
+          <button class="lang-btn" data-lang="it" aria-label="Italiano">IT</button>
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (Technical Precision Layout with Mascot)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      
+      <div class="hero-meta-strip">
+        <span class="hero-tag" data-i18n="heroBadge">Maker Faire Rome 2026 : Research Stand</span>
+        <span class="hero-event-label">Biomedical Engineering & Oncology</span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title" data-i18n="heroTitle">GHOST TUMOR</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">A 3D biomimetic platform to dissect the Colorectal Tumor Microenvironment</p>
+          
+          <p class="hero-lead" data-i18n="heroLead">
+            From patient surgical resections to a 3D biomimetic avatar via decellularization, GelMA hydrogel, and 3D bioprinting: enabling therapy and immunotherapy screening without animal models.
+          </p>
+
+          <!-- Quick Scan Pills (30s Booth Read) -->
+          <div class="hero-pills">
+            <span class="hero-pill" data-i18n="pill1">Patient-Derived dECM</span>
+            <span class="hero-pill" data-i18n="pill2">3D Bioprinting in GelMA</span>
+            <span class="hero-pill" data-i18n="pill3">Animal-Free Model</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#pipeline" class="btn btn-primary" data-i18n="btnExplore">Explore 8 Steps</a>
+            <a href="#microscope" class="btn btn-secondary" data-i18n="btnResults">View Experimental Data</a>
+          </div>
+        </div>
+
+        <!-- Mascot (free-standing, no frame) -->
+        <div class="hero-mascot-box">
+          <img src="./assets/img/fantasmino.png" alt="Ghost Tumor Mascot" class="hero-mascot" width="180" height="180">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: THE CONCEPT & DECELLULARIZATION COMPARISON
+       ========================================================================== -->
+  <section class="section" id="concept">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="conceptTag">Scientific Concept</span>
+        <h2 class="section-title" data-i18n="conceptTitle">Why 'Ghost Tumor'? Breaching Cancer's Fortress</h2>
+        <p class="section-desc" data-i18n="conceptDesc">
+          Every solid tumor is embedded in a dense protein scaffold - the Extracellular Matrix (ECM) - which governs cell proliferation, tissue invasion, and therapeutic resistance. Colorectal cancer cells remodel this scaffold, creating a dense physical and biochemical barrier that excludes immune cell infiltration.
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-card highlight">
+          <div class="concept-card-code">CONCEPT 01</div>
+          <h3 data-i18n="conceptCard1Title">The 'Ghost' Scaffold (dECM)</h3>
+          <p data-i18n="conceptCard1Desc">
+            Through gentle chemical and enzymatic detergent wash cycles, every cell is cleared from patient colorectal resections. The result is a translucent, cell-free biological scaffold retaining native architecture, collagen composition, and microenvironmental cues.
+          </p>
+        </div>
+
+        <div class="concept-card">
+          <div class="concept-card-code">CONCEPT 02</div>
+          <h3 data-i18n="conceptCard2Title">3D Recellularization</h3>
+          <p data-i18n="conceptCard2Desc">
+            The freeze-dried dECM is integrated into photocrosslinkable GelMA hydrogels and repopulated with human colorectal adenocarcinoma cells and stromal fibroblasts, reconstituting genuine 3D tissue architecture in vitro.
+          </p>
+        </div>
+      </div>
+
+      <!-- Histological Comparison Viewer (Healthy vs Pre vs Post Decellularization) -->
+      <div class="decell-viewer">
+        <div class="viewer-header">
+          <div>
+            <h3 class="viewer-title" data-i18n="viewerTitle">Histological Assessment: Decellularization Efficacy</h3>
+            <p class="viewer-desc" data-i18n="viewerDesc">Select the staining channel to examine how detergent perfusion completely clears cell nuclei while preserving the fibrillar extracellular matrix:</p>
+          </div>
+
+          <div class="viewer-channel-select" role="group" aria-label="Staining Channel Selection">
+            <button class="channel-btn active" data-channel="he" data-i18n="chanHe">Hematoxylin & Eosin (H&E)</button>
+            <button class="channel-btn" data-channel="dapi" data-i18n="chanDapi">DAPI (Cell Nuclei)</button>
+          </div>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Normal Colon -->
+          <div class="comparison-card">
+            <div class="comparison-img-wrapper">
+              <img id="img-decell-colon" src="./assets/img/decell_colon_he.webp" alt="Healthy Colon Control" class="comparison-img" loading="lazy">
+            </div>
+            <div class="comparison-label">
+              <h4 data-i18n="lblColon">Healthy Colon (Control)</h4>
+              <span class="comparison-badge badge-normal" data-i18n="badgeNormal">Healthy Tissue</span>
+            </div>
+          </div>
+
+          <!-- Tumor Pre-Decell -->
+          <div class="comparison-card">
+            <div class="comparison-img-wrapper">
+              <img id="img-decell-pre" src="./assets/img/decell_tumor_pre_he.webp" alt="Tumor Tissue Pre-Decellularization" class="comparison-img" loading="lazy">
+            </div>
+            <div class="comparison-label">
+              <h4 data-i18n="lblTumorPre">Tumor Tissue (Pre)</h4>
+              <span class="comparison-badge badge-tumor" data-i18n="badgeTumorPre">Cellular + Matrix</span>
+            </div>
+          </div>
+
+          <!-- Tumor Post-Decell (Ghost Tumor) -->
+          <div class="comparison-card accent-card">
+            <div class="comparison-img-wrapper">
+              <img id="img-decell-post" src="./assets/img/decell_tumor_post_he.webp" alt="Tumor Tissue Post-Decellularization" class="comparison-img" loading="lazy">
+            </div>
+            <div class="comparison-label">
+              <h4 data-i18n="lblTumorPost">Tumor Tissue (Post)</h4>
+              <span class="comparison-badge badge-ghost" data-i18n="badgeGhost">Ghost Tumor (dECM)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="decell-explain-box">
+          <span class="decell-explain-badge">NOTE</span>
+          <span data-i18n="decellNote">Experimental Note: In the DAPI channel (blue fluorescent filter), tumor tissue after decellularization demonstrates total absence of cell nuclei, verifying complete clearance of cellular material while maintaining the native collagen framework intact.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: MODEL INGREDIENTS & ALGINATE TO GELMA
+       ========================================================================== -->
+  <section class="section ingredients-section" id="model">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="ingTag">System Components</span>
+        <h2 class="section-title" data-i18n="ingTitle">From 2D Monolayer to 3D GelMA Bioprinting</h2>
+        <p class="section-desc" data-i18n="ingDesc">
+          To overcome the limitations of 2D plastic plates and alginate's failure to support stromal cells long-term, the platform integrates four synergistic biological components:
+        </p>
+      </div>
+
+      <div class="ingredient-cards-grid">
+        <!-- LoVo Cells -->
+        <div class="ingredient-card">
+          <img src="./assets/img/cellula_lovo.webp" alt="LoVo colorectal adenocarcinoma cells in brightfield" class="ingredient-thumb" loading="lazy">
+          <div class="ingredient-content">
+            <div class="ingredient-meta">
+              <span class="marker-tag epcam">EpCAM+</span>
+              <span class="ingredient-type">Tumor</span>
+            </div>
+            <h3 data-i18n="lovoTitle">LoVo Cells (Tumor)</h3>
+            <p data-i18n="lovoDesc">Human colorectal adenocarcinoma line (EpCAM+). In the 3D biomaterial, cells exhibit high viability and organize spontaneously into tight multicellular tumor clusters.</p>
+          </div>
+        </div>
+
+        <!-- CAF Cells -->
+        <div class="ingredient-card">
+          <img src="./assets/img/cellula_caf.webp" alt="Cancer-Associated Fibroblasts in brightfield" class="ingredient-thumb" loading="lazy">
+          <div class="ingredient-content">
+            <div class="ingredient-meta">
+              <span class="marker-tag vim">Vimentin+</span>
+              <span class="ingredient-type">Stroma</span>
+            </div>
+            <h3 data-i18n="cafTitle">CAFs (Stromal Fibroblasts)</h3>
+            <p data-i18n="cafDesc">Patient-derived Cancer-Associated Fibroblasts (Vimentin+). They remodel ECM and provide biomechanical cues. GelMA provides essential RGD adhesion motifs for their anchorage.</p>
+          </div>
+        </div>
+
+        <!-- Patient dECM -->
+        <div class="ingredient-card">
+          <img src="./assets/img/step1_lyophilization.webp" alt="Patient-derived lyophilized dECM" class="ingredient-thumb" loading="lazy">
+          <div class="ingredient-content">
+            <div class="ingredient-meta">
+              <span class="marker-tag">Patient</span>
+              <span class="ingredient-type">5 mg/mL</span>
+            </div>
+            <h3 data-i18n="decmTitle">Patient-Derived dECM</h3>
+            <p data-i18n="decmDesc">Decellularized extracellular matrix lyophilized and milled into powder (5 mg/mL), enriching the bioink with patient-specific biochemical signals.</p>
+          </div>
+        </div>
+
+        <!-- PBMC & Bioreactor -->
+        <div class="ingredient-card">
+          <img src="./assets/img/bioprinter_biox.webp" alt="3D Bioprinter and dynamic culture" class="ingredient-thumb" loading="lazy">
+          <div class="ingredient-content">
+            <div class="ingredient-meta">
+              <span class="marker-tag">Immunity</span>
+              <span class="ingredient-type">Dynamic</span>
+            </div>
+            <h3 data-i18n="pbmcTitle">PBMC & Bioreactor (Ongoing)</h3>
+            <p data-i18n="pbmcDesc">Autologous peripheral blood lymphocytes under dynamic perfusion in bioreactors to assess immune infiltration and personalized immunotherapy response.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Alginate to GelMA Box -->
+      <div class="alginate-vs-gelma-box">
+        <div class="alginate-vs-gelma-content">
+          <h4 data-i18n="whyGelmaTitle">Rationale: Transition from Alginate to GelMA</h4>
+          <p data-i18n="whyGelmaText">
+            During exploratory phases, alginate hydrogels resulted in declining metabolic rates and limited survival for Cancer-Associated Fibroblasts due to a lack of intrinsic cell attachment motifs. Switching to Gelatin Methacryloyl (GelMA), a collagen-derived biomaterial with native RGD integrin-binding sequences, restored fibroblast spreading and long-term stromal viability.
+          </p>
+        </div>
+        <img src="./assets/img/experimental_design.webp" alt="Experimental Design Workflow" class="diagram-preview-thumb" loading="lazy">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: 8 LAB STEPS PIPELINE (Standard Operating Procedure)
+       ========================================================================== -->
+  <section class="section pipeline-section" id="pipeline">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="pipeTag">Standard Operating Procedure</span>
+        <h2 class="section-title" data-i18n="pipeTitle">From Resection to 3D Micro-Constructs in 8 Steps</h2>
+        <p class="section-desc" data-i18n="pipeDesc">
+          The standardized protocol illustrated on our exhibition poster, ensuring reproducible and uniform 3D cancer replicates for drug screening:
+        </p>
+      </div>
+
+      <div class="pipeline-timeline">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">01</span>
+            <span class="step-code">LYOPHIL</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step1_lyophilization.webp" alt="Freeze-drying GelMA and patient dECM" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step1Title">1. Lyophilization</h3>
+          <p class="step-desc" data-i18n="step1Desc">GelMA and patient dECM are dehydrated using a vacuum freeze-dryer (Heto LyoPro 3000) to yield stable, porous matrix sponges ready for reconstitution.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">02</span>
+            <span class="step-code">BIOINK</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step2_bioink.webp" alt="Bioink preparation with riboflavin photoinitiator" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step2Title">2. Bioink Formulation</h3>
+          <p class="step-desc" data-i18n="step2Desc">Lyophilized GelMA is dissolved in sterile saline alongside biocompatible photoinitiators (Riboflavin + Sodium Persulfate) to create the liquid bioink.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">03</span>
+            <span class="step-code">HARVEST</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step3_harvesting.webp" alt="Cell harvesting and centrifugation" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step3Title">3. Cell Detachment & Centrifugation</h3>
+          <p class="step-desc" data-i18n="step3Desc">LoVo adenocarcinoma cells and CAFs are harvested from culture flasks under laminar flow hoods and concentrated into distinct cell pellets.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">04</span>
+            <span class="step-code">COUNT</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step4_cell_counting.webp" alt="Cell counting under microscope with Burker chamber" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step4Title">4. Cell Counting & Density Adjustment</h3>
+          <p class="step-desc" data-i18n="step4Desc">Viable cell concentration is determined using a Bürker hemocytometer under phase-contrast microscopy to calculate exact cell encapsulation ratios.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">05</span>
+            <span class="step-code">MOLD</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step5_bioink_cells.webp" alt="Cell suspension in bioink and molding" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step5Title">5. Cell Loading & Mold Casting</h3>
+          <p class="step-desc" data-i18n="step5Desc">Cell pellets are gently resuspended in the GelMA bioink and dispensed into customized silicone molds or extruded via a CELLINK BIO X pneumatic bioprinter.</p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">06</span>
+            <span class="step-code">CROSSLINK</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step6_photopolymerization.webp" alt="UV-A visible light photopolymerization" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step6Title">6. Photopolymerization</h3>
+          <p class="step-desc" data-i18n="step6Desc">Constructs are exposed to controlled visible light / UV-A: free-radical crosslinking rapidly cures the hydrogel network into elastic mini-discs.</p>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">07</span>
+            <span class="step-code">TRANSFER</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step7_well_transfer.webp" alt="Hydrogel transfer to multiwell culture plate" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step7Title">7. Well Transfer</h3>
+          <p class="step-desc" data-i18n="step7Desc">Solidified hydrogel constructs are delicately lifted using sterile micro-spatulas and transferred into individual wells of 24-well culture plates.</p>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">08</span>
+            <span class="step-code">INCUBATE</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step8_incubation.webp" alt="Eppendorf CellXpert incubator" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step8Title">8. Long-Term Dynamic Incubation</h3>
+          <p class="step-desc" data-i18n="step8Desc">Constructs are cultured at 37 C, 5% CO2 inside Eppendorf CellXpert incubators, monitoring viability, morphometry, and drug sensitivity up to 30 days.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: UNDER THE CONFOCAL MICROSCOPE (Fixed Uniform Height Frame)
+       ========================================================================== -->
+  <section class="section confocal-section" id="microscope">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="confTag">Experimental Data</span>
+        <h2 class="section-title" data-i18n="confTitle">Under the Confocal Laser Scanning Microscope</h2>
+        <p class="section-desc" data-i18n="confDesc">
+          Explore genuine fluorescence and histological data validating cell survival, multicellular organization, and stromal preservation across time:
+        </p>
+      </div>
+
+      <!-- Microscope Filter Tabs -->
+      <div class="micro-tabs" role="tablist">
+        <button class="micro-tab-btn active" data-target="panel-lovo" data-i18n="tabClusters">LoVo Clusters in GelMA</button>
+        <button class="micro-tab-btn" data-target="panel-caf" data-i18n="tabCaf">CAF Stromal Morphology</button>
+        <button class="micro-tab-btn" data-target="panel-timeline" data-i18n="tabTimeline">30-Day Timeline & H&E</button>
+        <button class="micro-tab-btn" data-target="panel-coculture" data-i18n="tabCoculture">Co-Culture + dECM</button>
+      </div>
+
+      <!-- Panel 1: LoVo Clusters -->
+      <div class="micro-panel active" id="panel-lovo">
+        <div class="micro-panel-grid">
+          <div class="micro-fixed-frame">
+            <img src="./assets/img/confocal_lovo_gelma.webp" alt="Confocal microscopy LoVo clusters in GelMA" class="micro-fixed-img" loading="lazy">
+            <span class="micro-img-badge">Live/Dead • Calcein-AM / EthD-1 • Scale bar: 500 µm</span>
+          </div>
+          <div class="micro-info-box">
+            <div class="micro-info-content">
+              <h3 data-i18n="microLoVoTitle">3D Cluster Morphogenesis in LoVo Cells</h3>
+              <p data-i18n="microLoVoDesc">
+                Live/Dead fluorescence staining (Calcein-AM green = viable cells, EthD-1 red = dead nuclei) confirms superior cell survival and self-assembly into spherical colorectal cancer clusters inside the GelMA hydrogel.
+              </p>
+            </div>
+            <div class="fluo-legend">
+              <div class="fluo-legend-item">
+                <span class="fluo-dot green"></span>
+                <span data-i18n="legendLive">Green: viable cells (Calcein-AM)</span>
+              </div>
+              <div class="fluo-legend-item">
+                <span class="fluo-dot red"></span>
+                <span data-i18n="legendDead">Red: dead nuclei (EthD-1)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: CAF Stromal -->
+      <div class="micro-panel" id="panel-caf">
+        <div class="micro-panel-grid">
+          <div class="micro-fixed-frame">
+            <img src="./assets/img/confocal_caf_gelma.webp" alt="Confocal microscopy CAF fibroblasts in GelMA" class="micro-fixed-img" loading="lazy">
+            <span class="micro-img-badge">Live/Dead • CAF in GelMA • Scale bar: 500 µm</span>
+          </div>
+          <div class="micro-info-box">
+            <div class="micro-info-content">
+              <h3 data-i18n="microCafTitle">Maintenance of Stromal CAFs in GelMA</h3>
+              <p data-i18n="microCafDesc">
+                Unlike inert polysaccharide hydrogels, GelMA promotes extensive fibroblast elongation, spindle morphology, and sustained metabolic activity through active integrin anchorage.
+              </p>
+            </div>
+            <div class="fluo-legend">
+              <div class="fluo-legend-item">
+                <span class="fluo-dot green"></span>
+                <span data-i18n="legendLive">Green: viable cells (Calcein-AM)</span>
+              </div>
+              <div class="fluo-legend-item">
+                <span class="fluo-dot red"></span>
+                <span data-i18n="legendDead">Red: dead nuclei (EthD-1)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: 30-Day Timeline & H&E -->
+      <div class="micro-panel" id="panel-timeline">
+        <div class="micro-panel-grid">
+          <div class="micro-fixed-frame">
+            <img src="./assets/img/microscopy_timeline.webp" alt="T0-T30 kinetics Live Dead and Hematoxylin-Eosin" class="micro-fixed-img" loading="lazy">
+            <span class="micro-img-badge">T0 → T7 → T14 → T30 • Live/Dead & H&E</span>
+          </div>
+          <div class="micro-info-box">
+            <div class="micro-info-content">
+              <h3 data-i18n="microTimeTitle">Long-Term Kinetics (T0 to T30) & Cryosections</h3>
+              <p data-i18n="microTimeDesc">
+                Viability monitoring and brightfield H&E cross-sections after optimized sequential sucrose cryoprotection (15% and 30%) and OCT embedding, confirming intact cellular nests at day 30.
+              </p>
+            </div>
+            <div class="fluo-legend">
+              <div class="fluo-legend-item">
+                <span class="fluo-dot green"></span>
+                <span data-i18n="legendLive">Green: viable cells (Calcein-AM)</span>
+              </div>
+              <div class="fluo-legend-item">
+                <span class="fluo-dot pink"></span>
+                <span data-i18n="legendHe">Purple/Pink: Hematoxylin & Eosin histology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 4: Co-Culture -->
+      <div class="micro-panel" id="panel-coculture">
+        <div class="micro-panel-grid">
+          <div class="micro-fixed-frame">
+            <img src="./assets/img/experimental_design.webp" alt="Co-culture LoVo and CAF with patient dECM" class="micro-fixed-img" loading="lazy">
+            <span class="micro-img-badge">LoVo (1:1) CAF ± dECM (5 mg/mL)</span>
+          </div>
+          <div class="micro-info-box">
+            <div class="micro-info-content">
+              <h3 data-i18n="microCocultureTitle">LoVo + CAF Co-Cultures with Patient dECM</h3>
+              <p data-i18n="microCocultureDesc">
+                1:1 co-culture constructs maintained up to 14 days with or without patient dECM (5 mg/mL). Matrix supplementation progressively boosts overall metabolic activity and recapitulates microenvironmental crosstalk.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: RESEARCH CONSORTIUM, AFFILIATIONS & EVENT STAND
+       ========================================================================== -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="teamTag">Research Consortium</span>
+        <h2 class="section-title" data-i18n="teamTitle">Investigators, Institutions & Collaborations</h2>
+        <p class="section-desc" data-i18n="teamDesc">
+          The Ghost Tumor project is a multidisciplinary research initiative uniting academic, clinical, and engineering institutions:
+        </p>
+      </div>
+
+      <!-- Affiliations Grid (Technical squared institutional badges, no emojis) -->
+      <div class="affiliations-grid">
+        <div class="affiliation-card">
+          <span class="affiliation-code">UNIGE</span>
+          <div>
+            <h4 data-i18n="aff1Title">University of Genoa - DIMI</h4>
+            <p data-i18n="aff1Desc">Department of Internal Medicine and Medical Specialties (Translational Medicine Group)</p>
+          </div>
+        </div>
+
+        <div class="affiliation-card">
+          <span class="affiliation-code">HSM</span>
+          <div>
+            <h4 data-i18n="aff2Title">IRCCS Ospedale Policlinico San Martino</h4>
+            <p data-i18n="aff2Desc">Genoa - Medical Oncology and Clinical Research Units</p>
+          </div>
+        </div>
+
+        <div class="affiliation-card">
+          <span class="affiliation-code">DIMES</span>
+          <div>
+            <h4 data-i18n="aff3Title">University of Genoa - DIMES & DISC</h4>
+            <p data-i18n="aff3Desc">Department of Experimental Medicine & Department of Surgical Sciences and Integrated Diagnostics</p>
+          </div>
+        </div>
+
+        <div class="affiliation-card">
+          <span class="affiliation-code">UNIPV</span>
+          <div>
+            <h4 data-i18n="aff4Title">University of Pavia - CompMech</h4>
+            <p data-i18n="aff4Desc">Department of Civil Engineering and Architecture (DICAr)</p>
+          </div>
+        </div>
+
+        <div class="affiliation-card">
+          <span class="affiliation-code">HSD</span>
+          <div>
+            <h4 data-i18n="aff5Title">IRCCS Policlinico San Donato</h4>
+            <p data-i18n="aff5Desc">C3DLab (Milan) - Advanced 3D Technologies and Bioprinting</p>
+          </div>
+        </div>
+
+        <div class="affiliation-card">
+          <span class="affiliation-code">MFR26</span>
+          <div>
+            <h4 data-i18n="aff6Title">Maker Faire Rome 2026</h4>
+            <p data-i18n="aff6Desc">European Edition - Universities & Research Track (Oct 23-25, 2026)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Authors List Box -->
+      <div class="authors-box">
+        <h3 data-i18n="authorsTitle">Scientific Authors & Investigators:</h3>
+        <p class="authors-list">
+          <strong>Manolo Sambucci</strong><sup>1</sup>, <strong>Alessia Repetto</strong><sup>1</sup>, <strong>Anita Muraglia</strong><sup>1</sup>, <strong>Silvia Pontara</strong><sup>2</sup>, <strong>Gaia Cendron</strong><sup>1</sup>, <strong>Francesco Papadia</strong><sup>3,4</sup>, <strong>Matteo Pitton</strong><sup>5,6</sup>, <strong>Michele Conti</strong><sup>5,6</sup>, <strong>Roberto Benelli</strong><sup>3</sup>, <strong>Federica Grillo</strong><sup>3,4</sup>, <strong>Daniela Fenoglio</strong><sup>1,3</sup>, <strong>Gilberto Filaci</strong><sup>1,3</sup>, <strong>Chiara Gentili</strong><sup>2,3</sup>, <strong>Maddalena Mastrogiacomo</strong><sup>1,3</sup>.
+        </p>
+      </div>
+
+      <!-- Stand & Poster Area: Linking Directly to the Exported Scientific Poster PDF -->
+      <div class="booth-box">
+        <div class="booth-text">
+          <h3 data-i18n="boothTitle">Visiting the Maker Faire Stand?</h3>
+          <p data-i18n="boothDesc">Scan through the scientific findings or ask our research team at the booth to examine real decellularized tissue matrices in person.</p>
+        </div>
+        <div class="booth-actions">
+          <a href="./assets/pdf/poster_scientifico_ghost_tumor.pdf" target="_blank" download="Poster_Scientifico_Ghost_Tumor.pdf" class="btn btn-primary" data-i18n="btnDownload">Download Scientific Poster (PDF)</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerCopy">GHOST TUMOR Project - University of Genoa & IRCCS Policlinico San Martino</p>
+      <p class="footer-copy">Maker Faire Rome 2026 • Optimized for Mobile Browsing & GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       STICKY BOTTOM NAV (Mobile Only, Clean Squared Navigation, No Emojis)
+       ========================================================================== -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+    <a href="#concept" class="mobile-nav-item active">
+      <span class="mobile-nav-code">01</span>
+      <span data-i18n="navConcept">Concept</span>
+    </a>
+    <a href="#model" class="mobile-nav-item">
+      <span class="mobile-nav-code">02</span>
+      <span data-i18n="navModel">Model</span>
+    </a>
+    <a href="#pipeline" class="mobile-nav-item">
+      <span class="mobile-nav-code">03</span>
+      <span data-i18n="navSteps">8 Steps</span>
+    </a>
+    <a href="#microscope" class="mobile-nav-item">
+      <span class="mobile-nav-code">04</span>
+      <span data-i18n="navMicro">Results</span>
+    </a>
+    <a href="#team" class="mobile-nav-item">
+      <span class="mobile-nav-code">05</span>
+      <span data-i18n="navTeam">Team</span>
+    </a>
+  </nav>
+
+  <!-- JavaScript -->
+  <script src="./src/js/main.js"></script>
+</body>
+</html>
