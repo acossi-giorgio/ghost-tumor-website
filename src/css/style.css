@@ -349,7 +349,7 @@ h1, h2, h3, h4 {
 @media (min-width: 768px) {
   .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 240px;
     gap: var(--s-6);
     align-items: center;
   }
@@ -370,13 +370,13 @@ h1, h2, h3, h4 {
 }
 
 .hero-mascot {
-  width: 110px;
+  width: 160px;
   height: auto;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  .hero-mascot { width: 180px; }
+  .hero-mascot { width: 230px; }
 }
 
 .hero-title {
