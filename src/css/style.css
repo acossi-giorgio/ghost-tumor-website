@@ -358,16 +358,21 @@ h1, h2, h3, h4 {
 /* Mascot: free-standing, no frame, no caption */
 .hero-mascot-box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
-  .hero-mascot-box { justify-content: center; }
+  .hero-mascot-box {
+    justify-content: center;
+    width: auto;
+  }
 }
 
 .hero-mascot {
-  width: 96px;
+  width: 110px;
   height: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -923,27 +928,42 @@ h1, h2, h3, h4 {
    ========================================================================== */
 .micro-tabs {
   display: flex;
+  flex-direction: column;
   gap: var(--s-2);
-  overflow-x: auto;
-  padding-bottom: var(--s-2);
-  margin-bottom: var(--s-4);
-  scrollbar-width: none;
+  margin-bottom: var(--s-5);
+  width: 100%;
 }
 
-.micro-tabs::-webkit-scrollbar { display: none; }
+@media (min-width: 768px) {
+  .micro-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
 
 .micro-tab-btn {
   font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  padding: 9px 14px;
+  padding: 11px 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-white);
   color: var(--text-muted);
-  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+@media (min-width: 768px) {
+  .micro-tab-btn {
+    width: auto;
+    padding: 9px 14px;
+    font-size: 0.74rem;
+  }
 }
 
 .micro-tab-btn:hover { border-color: var(--line-strong); color: var(--text-dark); }
