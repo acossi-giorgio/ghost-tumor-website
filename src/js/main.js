@@ -186,7 +186,7 @@ let manualNavLockTimeout = null;
 
 function updateActiveNav(activeId) {
   const navItems = document.querySelectorAll(".mobile-nav-item");
-  const desktopLinks = document.querySelectorAll(".site-nav .nav-link");
+  const desktopLinks = document.querySelectorAll(".desktop-nav .nav-link");
 
   navItems.forEach(item => {
     const href = item.getAttribute("href");
