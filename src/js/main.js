@@ -181,49 +181,123 @@ function initMicroscopeTabs() {
   });
 }
 
-// 4. Mobile Bottom Nav & Intersection Observer
-function initMobileNavObserver() {
+// 4. Mobile Bottom Nav & Chapter Tracking
+let manualNavLockTimeout = null;
+
+function updateActiveNav(activeId) {
   const navItems = document.querySelectorAll(".mobile-nav-item");
-  const sections = document.querySelectorAll("section[id]");
+  const desktopLinks = document.querySelectorAll(".site-nav .nav-link");
 
-  if (!navItems.length || !sections.length) return;
+  navItems.forEach(item => {
+    const href = item.getAttribute("href");
+    item.classList.toggle("active", href === `#${activeId}`);
+  });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute("id");
-        navItems.forEach(item => {
-          const href = item.getAttribute("href");
-          if (href === `#${id}`) {
-            navItems.forEach(i => i.classList.remove("active"));
-            item.classList.add("active");
-          }
-        });
+  desktopLinks.forEach(link => {
+    const href = link.getAttribute("href");
+    link.classList.toggle("active", href === `#${activeId}`);
+  });
+}
+
+function initMobileNavObserver() {
+  const chapterIds = ["concept", "model", "pipeline", "microscope", "team"];
+  const sections = chapterIds
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+
+  if (!sections.length) return;
+
+  const header = document.querySelector(".site-header");
+
+  const detectActiveSection = () => {
+    // If user recently tapped a chapter tab, ignore intermediate scroll events
+    if (manualNavLockTimeout) return;
+
+    // Edge case: scrolled to the bottom of the page -> activate last section
+    const scrollBottom = window.innerHeight + window.scrollY;
+    const docHeight = document.documentElement.scrollHeight;
+    if (scrollBottom >= docHeight - 50) {
+      updateActiveNav("team");
+      return;
+    }
+
+    const headerHeight = header ? header.offsetHeight : 72;
+    // Probe line comfortably below the sticky header
+    const triggerY = headerHeight + 60;
+
+    // If still in the hero / above the first chapter, highlight chapter 01
+    const firstSectionRect = sections[0].getBoundingClientRect();
+    if (firstSectionRect.top > triggerY) {
+      updateActiveNav("concept");
+      return;
+    }
+
+    // Find which section currently encompasses the trigger line
+    let activeId = "concept";
+    for (let i = 0; i < sections.length; i++) {
+      const rect = sections[i].getBoundingClientRect();
+      if (rect.top <= triggerY && rect.bottom > triggerY) {
+        activeId = sections[i].getAttribute("id");
+        break;
       }
-    });
-  }, { threshold: 0.35 });
+    }
 
-  sections.forEach(s => observer.observe(s));
+    updateActiveNav(activeId);
+  };
+
+  // Passive scroll listener with requestAnimationFrame throttling for 60/120fps performance
+  let isTicking = false;
+  window.addEventListener("scroll", () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        detectActiveSection();
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  }, { passive: true });
+
+  window.addEventListener("resize", detectActiveSection, { passive: true });
+
+  // Initial check on page load
+  detectActiveSection();
 }
 
 // 5. Smooth Scroll for Anchor Links
 function initSmoothScroll() {
+  const header = document.querySelector(".site-header");
+  const chapterIds = ["concept", "model", "pipeline", "microscope", "team"];
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
       const targetId = this.getAttribute("href");
       if (targetId === "#") return;
       const targetElem = document.querySelector(targetId);
-      if (targetElem) {
-        e.preventDefault();
-        const headerOffset = 64;
-        const elemPosition = targetElem.getBoundingClientRect().top;
-        const offsetPosition = elemPosition + window.pageYOffset - headerOffset;
+      if (!targetElem) return;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
+      e.preventDefault();
+
+      const cleanId = targetId.replace("#", "");
+
+      // If tapping one of the chapter buttons, immediately set active state
+      if (chapterIds.includes(cleanId)) {
+        updateActiveNav(cleanId);
+
+        // Lock auto-detection while smooth scrolling to prevent jittering across intermediate sections
+        clearTimeout(manualNavLockTimeout);
+        manualNavLockTimeout = setTimeout(() => {
+          manualNavLockTimeout = null;
+        }, 750);
       }
+
+      const headerOffset = header ? header.offsetHeight : 72;
+      const elemPosition = targetElem.getBoundingClientRect().top;
+      const offsetPosition = elemPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     });
   });
 }
