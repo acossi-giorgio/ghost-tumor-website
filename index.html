@@ -12,12 +12,37 @@
   <meta property="og:image" content="./assets/img/experimental_design.webp">
   <meta property="og:type" content="website">
 
-  <!-- Preload Essential Brand Assets -->
+  <!-- Preload Essential Brand Assets & Translations -->
+  <link rel="preload" href="./translations.json" as="fetch" crossorigin="anonymous">
   <link rel="preload" href="./assets/img/fantasmino.png" as="image">
   <link rel="preload" href="./assets/img/logo_unige.webp" as="image">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./src/css/style.css">
+  
+  <style>
+    /* Previene il flash di placeholder prima dell'iniezione dei testi con reveal fluido */
+    html {
+      background-color: #ffffff;
+    }
+    body:not(.i18n-ready) {
+      opacity: 0;
+    }
+    body.i18n-ready {
+      opacity: 1;
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+  <noscript>
+    <style>
+      body:not(.i18n-ready) {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+
+  <!-- Script with defer to fetch in parallel and execute synchronously as DOM completes -->
+  <script defer src="./src/js/main.js"></script>
 </head>
 <body>
 
@@ -618,7 +643,5 @@
     </a>
   </nav>
 
-  <!-- JavaScript -->
-  <script src="./src/js/main.js"></script>
 </body>
 </html>

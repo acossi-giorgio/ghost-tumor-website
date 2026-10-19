@@ -12,6 +12,26 @@
 let translationsData = null;
 let currentLang = "en";
 
+// Start translations fetch immediately to leverage preload cache
+const translationsPromise = fetch("./translations.json")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Failed to load translations: ${response.status}`);
+    }
+    return response.json();
+  })
+  .catch(error => {
+    console.error("Could not load external translations.json:", error);
+    return null;
+  });
+
+// Safety fallback: ensure body is revealed even if fetch or DOM events are delayed
+setTimeout(() => {
+  if (document.body && !document.body.classList.contains("i18n-ready")) {
+    document.body.classList.add("i18n-ready");
+  }
+}, 800);
+
 // Initialize Page Logic
 document.addEventListener("DOMContentLoaded", async () => {
   await loadTranslations();
@@ -23,20 +43,21 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 /**
- * Loads translations from external JSON file.
- * The JSON structure pairs IT and EN together for every key:
- * "keyName": { "it": "...", "en": "..." }
+ * Awaits translations from external JSON file and applies them before revealing the page.
  */
 async function loadTranslations() {
   try {
-    const response = await fetch("./translations.json");
-    if (!response.ok) {
-      throw new Error(`Failed to load translations: ${response.status}`);
+    translationsData = await translationsPromise;
+    if (translationsData) {
+      applyLanguage(currentLang);
     }
-    translationsData = await response.json();
-    applyLanguage(currentLang);
   } catch (error) {
-    console.error("Could not load external translations.json:", error);
+    console.error("Could not apply external translations:", error);
+  } finally {
+    // Reveal body with smooth fade once initial texts are injected
+    if (document.body) {
+      document.body.classList.add("i18n-ready");
+    }
   }
 }
 
