@@ -19,8 +19,8 @@
       "en": "Model"
     },
     "navSteps": {
-      "it": "8 Step",
-      "en": "8 Steps"
+      "it": "9 Step",
+      "en": "9 Steps"
     },
     "navMicro": {
       "it": "Risultati",
@@ -69,8 +69,8 @@
       "en": "Animal-Free Model"
     },
     "btnExplore": {
-      "it": "Esplora gli 8 Step",
-      "en": "Explore 8 Steps"
+      "it": "Esplora i 9 Step",
+      "en": "Explore 9 Steps"
     },
     "btnResults": {
       "it": "Guarda i Risultati",
@@ -245,108 +245,120 @@
       "en": "Standard Operating Procedure"
     },
     "pipeTitle": {
-      "it": "Dal Tessuto al Costrutto 3D in 8 Step",
-      "en": "From Resection to 3D Micro-Constructs in 8 Steps"
+      "it": "Dal Tessuto al Costrutto 3D in 9 Step",
+      "en": "From Resection to 3D Micro-Constructs in 9 Steps"
     },
     "pipeDesc": {
       "it": "La pipeline di laboratorio riprodotta nel poster illustrativo dello stand, per ottenere costrutti riproducibili e standardizzati:",
       "en": "The standardized protocol illustrated on our exhibition poster, ensuring reproducible and uniform 3D cancer replicates for drug screening:"
     },
     "step1Code": {
+      "it": "DECELL",
+      "en": "DECELL"
+    },
+    "step1Title": {
+      "it": "1. Decellularizzazione",
+      "en": "1. Decellularization"
+    },
+    "step1Desc": {
+      "it": "Il campione tumorale viene sottoposto a un processo di decellularizzazione (trattamento chimico ed enzimatico) per rimuovere le cellule dalla matrice extracellulare preservandone struttura, composizione biochimica e proprietà meccaniche.",
+      "en": "The tumor sample is subjected to a decellularization process (chemical and enzymatic treatment) in order to remove cells from the extracellular matrix preserving its structural, biochemical composition and mechanical properties."
+    },
+    "step2Code": {
       "it": "LIOFIL",
       "en": "LYOPHIL"
     },
-    "step1Title": {
-      "it": "1. Liofilizzazione (Lyophilization)",
-      "en": "1. Lyophilization"
-    },
-    "step1Desc": {
-      "it": "Prepariamo il GelMA e la dECM tramite liofilizzatore (Heto LyoPro 3000) per ottenere una matrice porosa disidratata e stabile pronta all'uso.",
-      "en": "GelMA and patient dECM are dehydrated using a vacuum freeze-dryer (Heto LyoPro 3000) to yield stable, porous matrix sponges ready for reconstitution."
-    },
-    "step2Code": {
-      "it": "BIOINK",
-      "en": "BIOINK"
-    },
     "step2Title": {
-      "it": "2. Preparazione Bioink",
-      "en": "2. Bioink Formulation"
+      "it": "2. Liofilizzazione",
+      "en": "2. Lyophilization"
     },
     "step2Desc": {
-      "it": "Sciogliamo il GelMA liofilizzato in soluzione salina con fotoiniziatori (Riboflavina + SPS) per ottenere l'idrogel liquido biocompatibile.",
-      "en": "Lyophilized GelMA is dissolved in sterile saline alongside biocompatible photoinitiators (Riboflavin + Sodium Persulfate) to create the liquid bioink."
+      "it": "Il campione decellularizzato (dECM) viene successivamente liofilizzato per ottenere una matrice porosa disidratata pronta all'uso.",
+      "en": "The decellularized sample is subsequently freeze-dried."
     },
     "step3Code": {
       "it": "HARVEST",
       "en": "HARVEST"
     },
     "step3Title": {
-      "it": "3. Harvesting & Centrifugazione",
-      "en": "3. Cell Detachment & Centrifugation"
+      "it": "3. Raccolta Cellulare",
+      "en": "3. Cell harvesting"
     },
     "step3Desc": {
-      "it": "Distacchiamo le cellule LoVo e CAF dalle piastre di coltura e le centrifughiamo per raccogliere e concentrare il pellet cellulare.",
-      "en": "LoVo adenocarcinoma cells and CAFs are harvested from culture flasks under laminar flow hoods and concentrated into distinct cell pellets."
+      "it": "Le cellule tumorali vengono distaccate dalla piastra, recuperate in una provetta con terreno di coltura e centrifugate.",
+      "en": "Tumoral cells are detached from the plate, recovered with tissue culture medium in a tube and centrifuged."
     },
     "step4Code": {
       "it": "CONTA",
       "en": "COUNT"
     },
     "step4Title": {
-      "it": "4. Conta Cellulare (Cell Counting)",
-      "en": "4. Cell Counting & Density Adjustment"
+      "it": "4. Conta Cellulare",
+      "en": "4. Cell Counting"
     },
     "step4Desc": {
-      "it": "Contiamo le cellule al microscopio con camera di Bürker per definire con precisione la densità cellulare ottimale da inserire nel costrutto.",
-      "en": "Viable cell concentration is determined using a Bürker hemocytometer under phase-contrast microscopy to calculate exact cell encapsulation ratios."
+      "it": "In seguito alla centrifugazione, le cellule vengono contate al microscopio utilizzando una camera di conta.",
+      "en": "Following centrifugation, cells are counted under a microscope using a counting chamber."
     },
     "step5Code": {
-      "it": "STAMPO",
-      "en": "MOLD"
+      "it": "BIOINK",
+      "en": "BIOINK"
     },
     "step5Title": {
-      "it": "5. Bioink + Cellule & Semina",
-      "en": "5. Cell Loading & Mold Casting"
+      "it": "5. Attivazione Bioink",
+      "en": "5. Bioink activation"
     },
     "step5Desc": {
-      "it": "Risospendiamo le cellule nel GelMA e inseriamo la mix nello stampo in silicone (mold) o procediamo alla biostampa con CELLINK BIO X.",
-      "en": "Cell pellets are gently resuspended in the GelMA bioink and dispensed into customized silicone molds or extruded via a CELLINK BIO X pneumatic bioprinter."
+      "it": "Dopo la ricostituzione in soluzione salina, il bioink – GelMA – viene attivato mediante un fotoiniziatore (riboflavina) e un co-iniziatore (sodio persolfato - SPS).",
+      "en": "Upon reconstitution in saline solution, the bioink – GelMA – is activated by a photoinitiator (riboflavin) and a co-initiator (sodium Persulfate - SPS)."
     },
     "step6Code": {
+      "it": "MIX",
+      "en": "MIX"
+    },
+    "step6Title": {
+      "it": "6. Bioink + Cellule",
+      "en": "6. Bioink + Cells"
+    },
+    "step6Desc": {
+      "it": "Le cellule vengono risospese nel Bioink GelMA attivato.",
+      "en": "Cells are resuspended in the activated Bioink GelMA."
+    },
+    "step7Code": {
+      "it": "BIOPRINT",
+      "en": "BIOPRINT"
+    },
+    "step7Title": {
+      "it": "7. Biostampa 3D",
+      "en": "7. 3D Bioprinting"
+    },
+    "step7Desc": {
+      "it": "La miscela cellula-Bioink viene trasferita nella biostampante 3D dove viene depositata strato dopo strato per creare un costrutto cellulare tridimensionale.",
+      "en": "The cell-Bioink mixture is transferred to the 3D bioprinter where it is deposited layer by layer to create a three-dimensional cellular construct."
+    },
+    "step8Code": {
       "it": "CROSSLINK",
       "en": "CROSSLINK"
     },
-    "step6Title": {
-      "it": "6. Fotopolimerizzazione",
-      "en": "6. Photopolymerization"
-    },
-    "step6Desc": {
-      "it": "Illuminiamo l'idrogel con una specifica sorgente di luce visibile/UV: i legami polimerici reticolano e solidificano il gel in pochi minuti.",
-      "en": "Constructs are exposed to controlled visible light / UV-A: free-radical crosslinking rapidly cures the hydrogel network into elastic mini-discs."
-    },
-    "step7Code": {
-      "it": "TRANSFER",
-      "en": "TRANSFER"
-    },
-    "step7Title": {
-      "it": "7. Well Transfer",
-      "en": "7. Well Transfer"
-    },
-    "step7Desc": {
-      "it": "Preleviamo delicatamente con una spatola i piccoli gel solidificati dallo stampo e li posizioniamo uno a uno nella piastra multiwell con terreno di coltura.",
-      "en": "Solidified hydrogel constructs are delicately lifted using sterile micro-spatulas and transferred into individual wells of 24-well culture plates."
-    },
-    "step8Code": {
-      "it": "INCUBA",
-      "en": "INCUBATE"
-    },
     "step8Title": {
-      "it": "8. Incubazione a Lungo Termine",
-      "en": "8. Long-Term Dynamic Incubation"
+      "it": "8. Fotopolimerizzazione",
+      "en": "8. Photopolymerization"
     },
     "step8Desc": {
-      "it": "I costrutti 3D vengono mantenuti in incubatore (Eppendorf CellXpert a 37 C, 5% CO2) e analizzati per vitalità e metabolismo fino a 30 giorni.",
-      "en": "Constructs are cultured at 37 C, 5% CO2 inside Eppendorf CellXpert incubators, monitoring viability, morphometry, and drug sensitivity up to 30 days."
+      "it": "La miscela Bioink+Cellule derivata dalla biostampa 3D viene esposta alla luce visibile per indurre la reticolazione della matrice – formazione dell'idrogel – in pochi minuti.",
+      "en": "The mixture Bioink+Cells derived from the 3D bioprinting is exposed to visible light to induce matrix crosslinking - hydrogel formation - within minutes."
+    },
+    "step9Code": {
+      "it": "COLTURA",
+      "en": "CULTURE"
+    },
+    "step9Title": {
+      "it": "9. Coltura dell'Idrogel",
+      "en": "9. Hydrogel culture"
+    },
+    "step9Desc": {
+      "it": "L'idrogel viene rimosso delicatamente dallo stampo e trasferito nel pozzetto di una piastra multiwell contenente terreno di coltura.",
+      "en": "The hydrogel is carefully removed from the mold and transferred into the well of a multiwell plate containing culture medium."
     }
   },
   "microscope": {

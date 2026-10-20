@@ -247,7 +247,7 @@
 
         <!-- Patient dECM -->
         <div class="ingredient-card">
-          <img src="./assets/img/step1_lyophilization.webp" alt="Patient-derived lyophilized dECM" class="ingredient-thumb" loading="lazy">
+          <img src="./assets/img/step2_lyophilization.webp" alt="Patient-derived lyophilized dECM" class="ingredient-thumb" loading="lazy">
           <div class="ingredient-content">
             <div class="ingredient-meta">
               <span class="marker-tag" data-i18n="metaPatient">{{ metaPatient }}</span>
@@ -285,7 +285,7 @@
   </section>
 
   <!-- ==========================================================================
-       SECTION 3: 8 LAB STEPS PIPELINE (Standard Operating Procedure)
+       SECTION 3: 9 LAB STEPS PIPELINE (Standard Operating Procedure)
        ========================================================================== -->
   <section class="section pipeline-section" id="pipeline">
     <div class="container">
@@ -304,7 +304,7 @@
             <span class="step-code" data-i18n="step1Code">{{ step1Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step1_lyophilization.webp" alt="Freeze-drying GelMA and patient dECM" class="step-img" loading="lazy">
+            <img src="./assets/img/step1_decellularization.webp" alt="Chemical and enzymatic tumor decellularization" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step1Title">{{ step1Title }}</h3>
           <p class="step-desc" data-i18n="step1Desc">{{ step1Desc }}</p>
@@ -317,7 +317,7 @@
             <span class="step-code" data-i18n="step2Code">{{ step2Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step2_bioink.webp" alt="Bioink preparation with riboflavin photoinitiator" class="step-img" loading="lazy">
+            <img src="./assets/img/step2_lyophilization.webp" alt="Freeze-drying patient dECM" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step2Title">{{ step2Title }}</h3>
           <p class="step-desc" data-i18n="step2Desc">{{ step2Desc }}</p>
@@ -343,7 +343,7 @@
             <span class="step-code" data-i18n="step4Code">{{ step4Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step4_cell_counting.webp" alt="Cell counting under microscope with Burker chamber" class="step-img" loading="lazy">
+            <img src="./assets/img/step4_cell_counting.webp" alt="Cell counting under microscope with counting chamber" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step4Title">{{ step4Title }}</h3>
           <p class="step-desc" data-i18n="step4Desc">{{ step4Desc }}</p>
@@ -356,7 +356,7 @@
             <span class="step-code" data-i18n="step5Code">{{ step5Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step5_bioink_cells.webp" alt="Cell suspension in bioink and molding" class="step-img" loading="lazy">
+            <img src="./assets/img/step5_bioink_activation.webp" alt="Bioink GelMA activation with photoinitiator and SPS" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step5Title">{{ step5Title }}</h3>
           <p class="step-desc" data-i18n="step5Desc">{{ step5Desc }}</p>
@@ -369,7 +369,7 @@
             <span class="step-code" data-i18n="step6Code">{{ step6Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step6_photopolymerization.webp" alt="UV-A visible light photopolymerization" class="step-img" loading="lazy">
+            <img src="./assets/img/step6_bioink_cells.webp" alt="Cells resuspended in activated Bioink GelMA" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step6Title">{{ step6Title }}</h3>
           <p class="step-desc" data-i18n="step6Desc">{{ step6Desc }}</p>
@@ -382,7 +382,7 @@
             <span class="step-code" data-i18n="step7Code">{{ step7Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step7_well_transfer.webp" alt="Hydrogel transfer to multiwell culture plate" class="step-img" loading="lazy">
+            <img src="./assets/img/step7_bioprinting.webp" alt="3D Bioprinting cellular construct" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step7Title">{{ step7Title }}</h3>
           <p class="step-desc" data-i18n="step7Desc">{{ step7Desc }}</p>
@@ -395,10 +395,23 @@
             <span class="step-code" data-i18n="step8Code">{{ step8Code }}</span>
           </div>
           <div class="step-img-box">
-            <img src="./assets/img/step8_incubation.webp" alt="Eppendorf CellXpert incubator" class="step-img" loading="lazy">
+            <img src="./assets/img/step8_photopolymerization.webp" alt="Visible light photopolymerization crosslinking" class="step-img" loading="lazy">
           </div>
           <h3 class="step-title" data-i18n="step8Title">{{ step8Title }}</h3>
           <p class="step-desc" data-i18n="step8Desc">{{ step8Desc }}</p>
+        </div>
+
+        <!-- Step 9 -->
+        <div class="step-card">
+          <div class="step-header">
+            <span class="step-num-badge">09</span>
+            <span class="step-code" data-i18n="step9Code">{{ step9Code }}</span>
+          </div>
+          <div class="step-img-box">
+            <img src="./assets/img/step9_incubation.webp" alt="Hydrogel extraction and incubation at 37C" class="step-img" loading="lazy">
+          </div>
+          <h3 class="step-title" data-i18n="step9Title">{{ step9Title }}</h3>
+          <p class="step-desc" data-i18n="step9Desc">{{ step9Desc }}</p>
         </div>
       </div>
 

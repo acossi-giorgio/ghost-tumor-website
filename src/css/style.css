@@ -854,7 +854,7 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   SECTION 3: 8 STEPS
+   SECTION 3: 9 STEPS
    ========================================================================== */
 .pipeline-timeline {
   display: grid;
@@ -867,7 +867,7 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 1024px) {
-  .pipeline-timeline { grid-template-columns: repeat(4, 1fr); }
+  .pipeline-timeline { grid-template-columns: repeat(3, 1fr); }
 }
 
 .step-card {
