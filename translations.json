@@ -100,7 +100,7 @@
     },
     "conceptCard1Desc": {
       "it": "Attraverso trattamenti chimico-enzimatici, tutte le cellule del tessuto tumorale di paziente vengono rimosse. Resta una matrice traslucida, un vero e proprio scaffold fantasma che conserva la memoria e la biochimica originaria.",
-      "en": "Through gentle chemical and enzymatic detergent wash cycles, every cell is cleared from patient colorectal resections. The result is a translucent, cell-free biological scaffold retaining native architecture, collagen composition, and microenvironmental cues."
+      "en": "Through gentle chemical and enzymatic digestion cycles, every cell is cleared from patient colorectal resections. The result is a translucent, cell-free biological scaffold retaining native architecture, collagen composition, and microenvironmental cues."
     },
     "conceptCode2": {
       "it": "CONCETTO 02",
@@ -207,8 +207,8 @@
       "en": "Human colorectal adenocarcinoma line (EpCAM+). In the 3D biomaterial, cells exhibit high viability and organize spontaneously into tight multicellular tumor clusters."
     },
     "cafTitle": {
-      "it": "CAF (Fibroblasti Stromali associati al tumore)",
-      "en": "CAFs (Cancer-Associated Stromal Fibroblasts)"
+      "it": "CAF (Fibroblasti associati al tumore)",
+      "en": "CAFs (Cancer-Associated Fibroblasts)"
     },
     "cafDesc": {
       "it": "Fibroblasti associati al tumore (Vimentina+). Rimodellano la matrice e forniscono supporto biomeccanico. La GelMA garantisce siti RGD ideali per la loro adesione.",
@@ -219,8 +219,8 @@
       "en": "Patient-Derived dECM"
     },
     "decmDesc": {
-      "it": "Matrice decellularizzata liofilizzata e polverizzata (5 mg/mL), che arricchisce il bioink con i segnali biochimici tipici del microambiente del paziente.",
-      "en": "Decellularized extracellular matrix lyophilized and milled into powder (5 mg/mL), enriching the bioink with patient-specific biochemical signals."
+      "it": "Matrice decellularizzata liofilizzata e polverizzata, che arricchisce il bioink con i segnali biochimici tipici del microambiente del paziente.",
+      "en": "Decellularized extracellular matrix lyophilized and milled into powder, enriching the bioink with patient-specific biochemical signals."
     },
     "pbmcTitle": {
       "it": "PBMC & Bioreattore (Futuro)",
@@ -235,7 +235,7 @@
       "en": "Rationale: Transition from Alginate to GelMA"
     },
     "whyGelmaText": {
-      "it": "Nelle fasi iniziali della ricerca, l'alginato ha mostrato una ridotta proliferazione nel lungo periodo per i CAF. La sostituzione con la gelatin methacryloyl (GelMA), biomateriale derivato dal collagene con siti specifici di adesione cellulare, favorisce l'interazione cellula-matrice indispensabile per la sopravvivenza dei fibroblasti stromali.",
+      "it": "Nelle fasi iniziali della ricerca, le cellule CAF hanno mostrato una ridotta proliferazione nel lungo periodo in alginato, il primo biomateriale usato per la coltura 3D. La sostituzione dell’alginato con la Gelatin Methacryloyl (GelMA), biomateriale derivato dal collagene con siti specifici di adesione cellulare, può rappresentare un’alternativa più idonea alla coltura dei CAF perché favorisce interazione cellula-matrice, indispensabile per la sopravvivenza dei fibroblasti stromali.",
       "en": "During exploratory phases, alginate hydrogels resulted in declining metabolic rates and limited survival for Cancer-Associated Fibroblasts due to a lack of intrinsic cell attachment motifs. Switching to Gelatin Methacryloyl (GelMA), a collagen-derived biomaterial with native RGD integrin-binding sequences, restored fibroblast spreading and long-term stromal viability."
     }
   },
@@ -261,8 +261,8 @@
       "en": "1. Tumor Decellularization"
     },
     "step1Desc": {
-      "it": "Il campione tumorale viene sottoposto a un processo di decellularizzazione in agitazione costante per rimuovere le componenti cellulari preservando l'integrità strutturale, la composizione biochimica e le proprietà meccaniche della matrice extracellulare (dECM).",
-      "en": "The tumor sample is subjected to a decellularization process under constant agitation to remove cellular components while preserving  structural integrity, biochemical composition and mechanical properties of the extracellular matrix (dECM)."
+      "it": "Il campione tumorale viene sottoposto a un processo di decellularizzazione in agitazione costante per rimuovere le componenti cellulari preservando l'integrità strutturale, la composizione biochimica e le proprietà meccaniche della matrice extracellulare (ECM).",
+      "en": "The tumor sample is subjected to a decellularization process under constant agitation to remove cellular components while preserving  structural integrity, biochemical composition and mechanical properties of the extracellular matrix (ECM)."
     },
     "step2Code": {
       "it": "LIOFIL",
@@ -281,12 +281,12 @@
       "en": "HARVEST"
     },
     "step3Title": {
-      "it": "3. Raccolta Cellulare",
+      "it": "3. Raccolta delle cellule",
       "en": "3. Cell harvesting"
     },
     "step3Desc": {
       "it": "Le cellule tumorali vengono distaccate dalla piastra, recuperate in una provetta con terreno di coltura e centrifugate.",
-      "en": "Tumoral cells are detached from the plate, recovered with tissue culture medium in a tube and centrifuged."
+      "en": "Tumor cells are detached from the plate, recovered with tissue culture medium in a tube and centrifuged."
     },
     "step4Code": {
       "it": "CONTA",
@@ -309,7 +309,7 @@
       "en": "5. Bioink activation"
     },
     "step5Desc": {
-      "it": "Il bioink GelMA, una forma modificata di gelatina funzionalizzata con gruppi metacrilici, viene attivato mediante un fotoiniziatore (riboflavina) e un co-iniziatore (sodio persolfato).",
+      "it": "Il bioink GelMA, una forma modificata di gelatina funzionalizzata con gruppi metacrilici, viene attivato mediante l'aggiunta di unfotoiniziatore (riboflavina) e di un co-iniziatore (sodio persolfato).",
       "en": "The GelMA bioink, a modified form of gelatin functionalized with methacryloyl groups, is activated by a photoinitiator (riboflavin) and a co-initiator (sodium Persulfate)."
     },
     "step6Code": {
@@ -333,7 +333,7 @@
       "en": "7. 3D Bioprinting"
     },
     "step7Desc": {
-      "it": "La miscela cellula-bioink contenente la dECM viene caricata nella biostampante 3D e depositata strato dopo strato in uno stampo per creare un costrutto cellulare tridimensionale.",
+      "it": "La miscela cellule-bioink contenente la dECM viene caricata nella biostampante 3D e depositata strato dopo strato in uno stampo per creare un costrutto cellulare tridimensionale.",
       "en": "The cell-bioink mixture containing dECM is loaded to the 3D Bioprinter and deposited layer by layer into a mold to create a three-dimensional cellular construct."
     },
     "step8Code": {
@@ -403,11 +403,11 @@
       "en": "Live/Dead • CAF in GelMA • Scale bar: 500 µm"
     },
     "microCafTitle": {
-      "it": "Mantenimento dei CAF Fibroblasti in GelMA",
+      "it": "Mantenimento dei CAF in GelMA",
       "en": "Maintenance of Stromal CAFs in GelMA"
     },
     "microCafDesc": {
-      "it": "A differenza dell'alginato, la GelMA garantisce un substrato ottimale per i Cancer-Associated Fibroblasts, che mantengono la loro tipica morfologia allungata e fusiforme con marcata attività metabolica.",
+      "it": "A differenza dell'alginato, la GelMA garantisce un substrato ottimale per i Cancer-Associated Fibroblasts, che mantengono la loro morfologia allungata e fusiforme con marcata attività metabolica.",
       "en": "Unlike inert polysaccharide hydrogels, GelMA promotes extensive fibroblast elongation, spindle morphology, and sustained metabolic activity through active integrin anchorage."
     },
     "microTimelineBadge": {
@@ -505,8 +505,8 @@
       "en": "Visiting the Maker Faire Stand?"
     },
     "boothDesc": {
-      "it": "Scorri i dettagli scientifici sul telefono o chiedi ai ricercatori presenti di mostrarti i campioni di matrice decellularizzata!",
-      "en": "Scan through the scientific findings or ask our research team at the booth to examine real decellularized tissue matrices in person."
+      "it": "Scorri i dettagli scientifici sul telefono o chiedi ai ricercatori presenti di vedere i costrutti tridimensionali",
+      "en": "Browse the scientific details on your phone or ask the researchers at the booth to show you the three-dimensional constructs."
     },
     "btnDownload": {
       "it": "Scarica Poster (PDF)",
