@@ -843,12 +843,18 @@ h1, h2, h3, h4 {
   line-height: 1.6;
 }
 
-.diagram-preview-thumb {
-  width: 100%;
-  max-width: 320px;
+.pipeline-diagram-box {
+  background: var(--bg-white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--bg-white);
+  padding: var(--s-4);
+  margin-bottom: var(--s-6);
+}
+
+.pipeline-diagram-img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
   display: block;
   margin: 0 auto;
 }

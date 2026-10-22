@@ -87,8 +87,8 @@
       "en": "Why 'Ghost Tumor'? Breaching Cancer's Fortress"
     },
     "conceptDesc": {
-      "it": "Ogni tumore è immerso in un'impalcatura di proteine - la Matrice Extracellulare (ECM) - che governa la sua crescita, l'invasione e la resistenza alle cure. Le cellule tumorali rimodellano questa matrice rendendola più densa e rigida, creando una fortezza che esclude le difese immunitarie.",
-      "en": "Every solid tumor is embedded in a dense protein scaffold - the Extracellular Matrix (ECM) - which governs cell proliferation, tissue invasion, and therapeutic resistance. Colorectal cancer cells remodel this scaffold, creating a dense physical and biochemical barrier that excludes immune cell infiltration."
+      "it": "Ogni tumore è immerso in un'impalcatura di proteine e altre molecole, la Matrice Extracellulare (ECM), che ne influenza la crescita, la capacità di invadere i tessuti circostanti e la resistenza alle terapie. Le cellule tumorali rimodellano la matrice rendendola più densa e rigida, creando una sorta di fortezza biologica che ostacola le difese immunitarie.",
+      "en": "Every tumor is embedded in a scaffold of proteins and other molecules, the Extracellular Matrix (ECM), which influences its growth, its ability to invade surrounding tissues, and its resistance to therapies. Cancer cells remodel the matrix, making it denser and stiffer, creating a biological fortress that hinders immune defenses."
     },
     "conceptCode1": {
       "it": "CONCETTO 01",
@@ -111,8 +111,8 @@
       "en": "3D Recellularization"
     },
     "conceptCard2Desc": {
-      "it": "La matrice liofilizzata viene unita a GelMA (idrogel fotoreticolabile) e ripopolata con cellule tumorali e stromali, ricreando in laboratorio un microambiente tridimensionale fedele alla patologia umana.",
-      "en": "The freeze-dried dECM is integrated into photocrosslinkable GelMA hydrogels and repopulated with human colorectal adenocarcinoma cells and stromal fibroblasts, reconstituting genuine 3D tissue architecture in vitro."
+      "it": "La matrice decellularizzata viene sottoposta a liofilizzazione, combinata al GelMA, un idrogel a reticolazione fotoindotta, ed infine ripopolata con cellule tumorali e stromali per ricreare in vitro un microambiente tridimensionale che riproduce le caratteristiche della patologia umana.",
+      "en": "The decellularized matrix is freeze-dried, combined with GelMA, a photo-crosslinkable hydrogel, and finally repopulated with tumor and stromal cells to recreate a three-dimensional microenvironment in vitro that reproduces the characteristics of human pathology."
     }
   },
   "decellularizationViewer": {
@@ -203,12 +203,12 @@
       "en": "LoVo Cells (Tumor)"
     },
     "lovoDesc": {
-      "it": "Adenocarcinoma colorettale umano (EpCAM+). Nel biomateriale tridimensionale proliferano e si auto-organizzano progressivamente in cluster sferoidali.",
+      "it": "Cellule LoVo derivate da adenocarcinoma colorettale umano (EpCAM+). Nel biomateriale tridimensionale proliferano e si auto-organizzano progressivamente in cluster sferoidali.",
       "en": "Human colorectal adenocarcinoma line (EpCAM+). In the 3D biomaterial, cells exhibit high viability and organize spontaneously into tight multicellular tumor clusters."
     },
     "cafTitle": {
-      "it": "CAF (Fibroblasti Stromali)",
-      "en": "CAFs (Stromal Fibroblasts)"
+      "it": "CAF (Fibroblasti Stromali associati al tumore)",
+      "en": "CAFs (Cancer-Associated Stromal Fibroblasts)"
     },
     "cafDesc": {
       "it": "Fibroblasti associati al tumore (Vimentina+). Rimodellano la matrice e forniscono supporto biomeccanico. La GelMA garantisce siti RGD ideali per la loro adesione.",
@@ -257,24 +257,24 @@
       "en": "DECELL"
     },
     "step1Title": {
-      "it": "1. Decellularizzazione",
-      "en": "1. Decellularization"
+      "it": "1. Decellularizzazione del Tumore",
+      "en": "1. Tumor Decellularization"
     },
     "step1Desc": {
-      "it": "Il campione tumorale viene sottoposto a un processo di decellularizzazione (trattamento chimico ed enzimatico) per rimuovere le cellule dalla matrice extracellulare preservandone struttura, composizione biochimica e proprietà meccaniche.",
-      "en": "The tumor sample is subjected to a decellularization process (chemical and enzymatic treatment) in order to remove cells from the extracellular matrix preserving its structural, biochemical composition and mechanical properties."
+      "it": "Il campione tumorale viene sottoposto a un processo di decellularizzazione in agitazione costante per rimuovere le componenti cellulari preservando l'integrità strutturale, la composizione biochimica e le proprietà meccaniche della matrice extracellulare (dECM).",
+      "en": "The tumor sample is subjected to a decellularization process under constant agitation to remove cellular components while preserving  structural integrity, biochemical composition and mechanical properties of the extracellular matrix (dECM)."
     },
     "step2Code": {
       "it": "LIOFIL",
       "en": "LYOPHIL"
     },
     "step2Title": {
-      "it": "2. Liofilizzazione",
-      "en": "2. Lyophilization"
+      "it": "2. Liofilizzazione della dECM",
+      "en": "2. dECM Lyophilization"
     },
     "step2Desc": {
-      "it": "Il campione decellularizzato (dECM) viene successivamente liofilizzato per ottenere una matrice porosa disidratata pronta all'uso.",
-      "en": "The decellularized sample is subsequently freeze-dried."
+      "it": "La matrice extracellulare decellularizzata (dECM) viene liofilizzata per facilitarne la conservazione, la lavorazione e l'incorporazione nel bioink.",
+      "en": "The decellularized ECM (dECM) is freeze-dried to facilitate storage, processing and incorporation into the bioink."
     },
     "step3Code": {
       "it": "HARVEST",
@@ -305,24 +305,24 @@
       "en": "BIOINK"
     },
     "step5Title": {
-      "it": "5. Attivazione Bioink",
+      "it": "5. Attivazione del Bioink",
       "en": "5. Bioink activation"
     },
     "step5Desc": {
-      "it": "Dopo la ricostituzione in soluzione salina, il bioink – GelMA – viene attivato mediante un fotoiniziatore (riboflavina) e un co-iniziatore (sodio persolfato - SPS).",
-      "en": "Upon reconstitution in saline solution, the bioink – GelMA – is activated by a photoinitiator (riboflavin) and a co-initiator (sodium Persulfate - SPS)."
+      "it": "Il bioink GelMA, una forma modificata di gelatina funzionalizzata con gruppi metacrilici, viene attivato mediante un fotoiniziatore (riboflavina) e un co-iniziatore (sodio persolfato).",
+      "en": "The GelMA bioink, a modified form of gelatin functionalized with methacryloyl groups, is activated by a photoinitiator (riboflavin) and a co-initiator (sodium Persulfate)."
     },
     "step6Code": {
       "it": "MIX",
       "en": "MIX"
     },
     "step6Title": {
-      "it": "6. Bioink + Cellule",
-      "en": "6. Bioink + Cells"
+      "it": "6. Bioink con Cellule",
+      "en": "6. Cell-laden Bioink"
     },
     "step6Desc": {
-      "it": "Le cellule vengono risospese nel Bioink GelMA attivato.",
-      "en": "Cells are resuspended in the activated Bioink GelMA."
+      "it": "Le cellule vengono risospese nel bioink GelMA attivato.",
+      "en": "The cells are resuspended in the activated GelMA bioink."
     },
     "step7Code": {
       "it": "BIOPRINT",
@@ -333,8 +333,8 @@
       "en": "7. 3D Bioprinting"
     },
     "step7Desc": {
-      "it": "La miscela cellula-Bioink viene trasferita nella biostampante 3D dove viene depositata strato dopo strato per creare un costrutto cellulare tridimensionale.",
-      "en": "The cell-Bioink mixture is transferred to the 3D bioprinter where it is deposited layer by layer to create a three-dimensional cellular construct."
+      "it": "La miscela cellula-bioink contenente la dECM viene caricata nella biostampante 3D e depositata strato dopo strato in uno stampo per creare un costrutto cellulare tridimensionale.",
+      "en": "The cell-bioink mixture containing dECM is loaded to the 3D Bioprinter and deposited layer by layer into a mold to create a three-dimensional cellular construct."
     },
     "step8Code": {
       "it": "CROSSLINK",
@@ -345,8 +345,8 @@
       "en": "8. Photopolymerization"
     },
     "step8Desc": {
-      "it": "La miscela Bioink+Cellule derivata dalla biostampa 3D viene esposta alla luce visibile per indurre la reticolazione della matrice – formazione dell'idrogel – in pochi minuti.",
-      "en": "The mixture Bioink+Cells derived from the 3D bioprinting is exposed to visible light to induce matrix crosslinking - hydrogel formation - within minutes."
+      "it": "La miscela cellule + bioink derivata dalla biostampa 3D viene esposta alla luce visibile per indurre la reticolazione della matrice – formazione dell'idrogel – in pochi minuti.",
+      "en": "The cells + bioink derived from the 3D bioprinting is exposed to visible light to induce matrix crosslinking - hydrogel formation - within minutes."
     },
     "step9Code": {
       "it": "COLTURA",
@@ -357,8 +357,8 @@
       "en": "9. Hydrogel culture"
     },
     "step9Desc": {
-      "it": "L'idrogel viene rimosso delicatamente dallo stampo e trasferito nel pozzetto di una piastra multiwell contenente terreno di coltura.",
-      "en": "The hydrogel is carefully removed from the mold and transferred into the well of a multiwell plate containing culture medium."
+      "it": "L'idrogel viene rimosso delicatamente dallo stampo, trasferito in un pozzetto di una piastra multiwell contenente terreno di coltura e incubato a 37°C con il 5% di CO₂.",
+      "en": "The hydrogel is carefully removed from the mold, transferred to a well of a multiwell plate containing culture medium and incubated at 37°C with 5% CO₂."
     }
   },
   "microscope": {
@@ -371,7 +371,7 @@
       "en": "Under the Confocal Laser Scanning Microscope"
     },
     "confDesc": {
-      "it": "Esplora i risultati sperimentali reali di vitalità, morfologia e organizzazione tissutale nel tempo:",
+      "it": "Esplora i risultati sperimentali reali di vitalità, morfologia e organizzazione tessutale nel tempo:",
       "en": "Explore genuine fluorescence and histological data validating cell survival, multicellular organization, and stromal preservation across time:"
     },
     "tabClusters": {
@@ -379,16 +379,12 @@
       "en": "LoVo Clusters in GelMA"
     },
     "tabCaf": {
-      "it": "Morfologia CAF Stromali",
-      "en": "CAF Stromal Morphology"
+      "it": "Morfologia CAF in GelMA",
+      "en": "CAF in GelMA Morphology"
     },
     "tabTimeline": {
       "it": "Timeline 30 Giorni & H&E",
       "en": "30-Day Timeline & H&E"
-    },
-    "tabCoculture": {
-      "it": "Co-coltura + dECM",
-      "en": "Co-Culture + dECM"
     },
     "microLoVoBadge": {
       "it": "Live/Dead • Calceina-AM / EthD-1 • Barra scala: 500 µm",
@@ -419,24 +415,12 @@
       "en": "T0 → T7 → T14 → T30 - Live/Dead & H&E"
     },
     "microTimeTitle": {
-      "it": "Evoluzione da T0 a T30 & Sezioni Crioprotette",
-      "en": "Long-Term Kinetics (T0 to T30) & Cryosections"
+      "it": "Evoluzione dei costrutti 3D da T0 a T30",
+      "en": "Evolution of 3D Constructs from T0 to T30"
     },
     "microTimeDesc": {
-      "it": "Monitoraggio della vitalità e analisi istologica con Ematossilina-Eosina dopo messa a punto del protocollo di crioprotezione con saccarosio sequenziale (15% e 30%) e inclusione in OCT, evidenziando cluster cellulari ben strutturati a 14 e 30 giorni.",
-      "en": "Viability monitoring and brightfield H&E cross-sections after optimized sequential sucrose cryoprotection (15% and 30%) and OCT embedding, confirming intact cellular nests at day 30."
-    },
-    "microCocultureBadge": {
-      "it": "LoVo (1:1) CAF ± dECM (5 mg/mL)",
-      "en": "LoVo (1:1) CAF ± dECM (5 mg/mL)"
-    },
-    "microCocultureTitle": {
-      "it": "Co-colture LoVo + CAF con Matrice Tumorale dECM",
-      "en": "LoVo + CAF Co-Cultures with Patient dECM"
-    },
-    "microCocultureDesc": {
-      "it": "Prima co-coltura 1:1 mantenuta fino a 14 giorni con e senza dECM tumorale di paziente (5 mg/mL). La presenza della matrice tumorale incrementa progressivamente l'attività metabolica e ricrea la complessità del microambiente.",
-      "en": "1:1 co-culture constructs maintained up to 14 days with or without patient dECM (5 mg/mL). Matrix supplementation progressively boosts overall metabolic activity and recapitulates microenvironmental crosstalk."
+      "it": "Monitoraggio della vitalità cellulare (Live/Dead) e analisi istologica (Ematossilina-Eosina) dei costrutti, dopo ottimizzazione del protocollo di crioprotezione con saccarosio e inclusione in OCT. I risultati ottenuti mostrano la presenza di cluster cellulari vitali ben strutturati a 14 e 30 giorni.",
+      "en": "Cell viability monitoring (Live/Dead) and histological analysis (Hematoxylin-Eosin) of the constructs, following optimization of the sucrose cryoprotection and OCT embedding protocol. The results show the presence of well-structured viable cell clusters at 14 and 30 days."
     },
     "legendLive": {
       "it": "Verde: cellule vitali (Calceina-AM)",

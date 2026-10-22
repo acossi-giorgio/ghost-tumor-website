@@ -251,7 +251,6 @@
           <div class="ingredient-content">
             <div class="ingredient-meta">
               <span class="marker-tag" data-i18n="metaPatient">{{ metaPatient }}</span>
-              <span class="ingredient-type">5 mg/mL</span>
             </div>
             <h3 data-i18n="decmTitle">{{ decmTitle }}</h3>
             <p data-i18n="decmDesc">{{ decmDesc }}</p>
@@ -260,7 +259,7 @@
 
         <!-- PBMC & Bioreactor -->
         <div class="ingredient-card">
-          <img src="./assets/img/bioprinter_biox.webp" alt="3D Bioprinter and dynamic culture" class="ingredient-thumb" loading="lazy">
+          <img src="./assets/img/pbmc_bioreactor.webp" alt="PBMC and Bioreactor dynamic culture" class="ingredient-thumb" loading="lazy">
           <div class="ingredient-content">
             <div class="ingredient-meta">
               <span class="marker-tag" data-i18n="metaImmunity">{{ metaImmunity }}</span>
@@ -278,7 +277,6 @@
           <h4 data-i18n="whyGelmaTitle">{{ whyGelmaTitle }}</h4>
           <p data-i18n="whyGelmaText">{{ whyGelmaText }}</p>
         </div>
-        <img src="./assets/img/experimental_design.webp" alt="Experimental Design Workflow" class="diagram-preview-thumb" loading="lazy">
       </div>
 
     </div>
@@ -294,6 +292,10 @@
         <span class="section-tag" data-i18n="pipeTag">{{ pipeTag }}</span>
         <h2 class="section-title" data-i18n="pipeTitle">{{ pipeTitle }}</h2>
         <p class="section-desc" data-i18n="pipeDesc">{{ pipeDesc }}</p>
+      </div>
+
+      <div class="pipeline-diagram-box">
+        <img src="./assets/img/experimental_design.webp" alt="Experimental Design Workflow" class="pipeline-diagram-img" loading="lazy">
       </div>
 
       <div class="pipeline-timeline">
@@ -435,7 +437,6 @@
         <button class="micro-tab-btn active" data-target="panel-lovo" data-i18n="tabClusters">{{ tabClusters }}</button>
         <button class="micro-tab-btn" data-target="panel-caf" data-i18n="tabCaf">{{ tabCaf }}</button>
         <button class="micro-tab-btn" data-target="panel-timeline" data-i18n="tabTimeline">{{ tabTimeline }}</button>
-        <button class="micro-tab-btn" data-target="panel-coculture" data-i18n="tabCoculture">{{ tabCoculture }}</button>
       </div>
 
       <!-- Panel 1: LoVo Clusters -->
@@ -511,22 +512,6 @@
                 <span class="fluo-dot pink"></span>
                 <span data-i18n="legendHe">{{ legendHe }}</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel 4: Co-Culture -->
-      <div class="micro-panel" id="panel-coculture">
-        <div class="micro-panel-grid">
-          <div class="micro-fixed-frame">
-            <img src="./assets/img/experimental_design.webp" alt="Co-culture LoVo and CAF with patient dECM" class="micro-fixed-img" loading="lazy">
-            <span class="micro-img-badge" data-i18n="microCocultureBadge">{{ microCocultureBadge }}</span>
-          </div>
-          <div class="micro-info-box">
-            <div class="micro-info-content">
-              <h3 data-i18n="microCocultureTitle">{{ microCocultureTitle }}</h3>
-              <p data-i18n="microCocultureDesc">{{ microCocultureDesc }}</p>
             </div>
           </div>
         </div>
