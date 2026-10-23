@@ -512,6 +512,26 @@
       "it": "Scarica Poster (PDF)",
       "en": "Download Poster (PDF)"
     },
+    "footerContactTitle": {
+      "it": "Contatti",
+      "en": "Contacts"
+    },
+    "footerContactRole": {
+      "it": "Professoressa associata",
+      "en": "Associate Professor"
+    },
+    "footerContactLab": {
+      "it": "Laboratorio di Bioterapie",
+      "en": "Biotherapies Laboratory"
+    },
+    "footerContactDepartment": {
+      "it": "Dipartimento di Medicina Interna e Specialità Mediche",
+      "en": "Department of Internal Medicine and Medical Specialties"
+    },
+    "footerContactUniversity": {
+      "it": "Università degli Studi di Genova",
+      "en": "University of Genoa"
+    },
     "footerCopy": {
       "it": "Progetto 'GHOST TUMOR' - Università di Genova & IRCCS Policlinico San Martino",
       "en": "GHOST TUMOR Project - University of Genoa & IRCCS Policlinico San Martino"

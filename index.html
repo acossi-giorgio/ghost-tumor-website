@@ -610,8 +610,27 @@
        ========================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <p data-i18n="footerCopy">{{ footerCopy }}</p>
-      <p class="footer-copy" data-i18n="footerEvent">{{ footerEvent }}</p>
+      <section class="footer-contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title" data-i18n="footerContactTitle">Contacts</h2>
+        <address>
+          <div>
+            <p><strong>Maddalena Mastrogiacomo, PhD</strong></p>
+            <p data-i18n="footerContactRole">Associate Professor</p>
+            <p><a href="mailto:maddalena.mastrogiacomo@unige.it">maddalena.mastrogiacomo@unige.it</a></p>
+            <p>Tel: <a href="tel:+390103537995">+39 010 3537995</a></p>
+          </div>
+          <div>
+            <p><strong data-i18n="footerContactLab">Biotherapies Laboratory</strong></p>
+            <p data-i18n="footerContactDepartment">Department of Internal Medicine and Medical Specialties</p>
+            <p data-i18n="footerContactUniversity">University of Genoa</p>
+            <p>Viale Benedetto XV, 6 - 16132 Genova</p>
+          </div>
+        </address>
+      </section>
+      <div class="footer-project">
+        <p data-i18n="footerCopy">{{ footerCopy }}</p>
+        <p class="footer-copy" data-i18n="footerEvent">{{ footerEvent }}</p>
+      </div>
     </div>
   </footer>
 

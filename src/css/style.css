@@ -1243,6 +1243,59 @@ h1, h2, h3, h4 {
 
 .site-footer p + p { margin-top: var(--s-1); }
 
+.footer-contact {
+  padding-bottom: var(--s-5);
+  margin-bottom: var(--s-5);
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-contact h2 {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: var(--s-3);
+}
+
+.footer-contact address {
+  display: grid;
+  gap: var(--s-5);
+  font-style: normal;
+  color: var(--text-body);
+}
+
+.footer-contact address > div { min-width: 0; }
+
+@media (min-width: 768px) {
+  .footer-contact { text-align: left; }
+
+  .footer-contact address {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--s-7);
+  }
+
+  .footer-project {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--s-5);
+    text-align: left;
+  }
+
+  .footer-project .footer-copy {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+}
+
+.footer-contact strong { color: var(--text-dark); }
+
+.footer-contact a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact a:hover { color: var(--accent-hover); }
+
 .footer-copy {
   font-family: var(--font-mono);
   font-size: 0.72rem;
