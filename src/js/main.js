@@ -200,7 +200,7 @@ function updateActiveNav(activeId) {
 }
 
 function initMobileNavObserver() {
-  const chapterIds = ["concept", "model", "pipeline", "microscope", "team"];
+  const chapterIds = ["concept", "model", "pipeline", "microscope", "team", "contacts"];
   const sections = chapterIds
     .map(id => document.getElementById(id))
     .filter(Boolean);
@@ -217,7 +217,7 @@ function initMobileNavObserver() {
     const scrollBottom = window.innerHeight + window.scrollY;
     const docHeight = document.documentElement.scrollHeight;
     if (scrollBottom >= docHeight - 50) {
-      updateActiveNav("team");
+      updateActiveNav("contacts");
       return;
     }
 
@@ -266,7 +266,7 @@ function initMobileNavObserver() {
 // 5. Smooth Scroll for Anchor Links
 function initSmoothScroll() {
   const header = document.querySelector(".site-header");
-  const chapterIds = ["concept", "model", "pipeline", "microscope", "team"];
+  const chapterIds = ["concept", "model", "pipeline", "microscope", "team", "contacts"];
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
